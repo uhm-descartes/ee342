@@ -27,11 +27,11 @@ responsible for the readings/experiences as assigned before you come
 to class. We reserve the class time for the harder or the more
 important parts. Modules have:
 
-  * [Prerequisites](https://uhm-descartes.github.io/ee445/prerequisites), describing skills you should have prior to starting the module.
-  * [Learning outcomes](https://uhm-descartes.github.io/ee445/outcomes), describing the major goals for the module.
-  * [Readings and other online resources](https://uhm-descartes.github.io/ee445/readings), providing background material.
-  * [Experiential learning activities](https://uhm-descartes.github.io/ee445/experiences), providing a structured set of challenges enabling you to acquire mastery of material.
-  * [Assessments](https://uhm-descartes.github.io/ee445/assessments), which help you determine if you have acquired mastery of the material.
+  * [Prerequisites](https://uhm-descartes.github.io/ee342/prerequisites), describing skills you should have prior to starting the module.
+  * [Learning outcomes](https://uhm-descartes.github.io/ee342/outcomes), describing the major goals for the module.
+  * [Readings and other online resources](https://uhm-descartes.github.io/ee342/readings), providing background material.
+  * [Experiential learning activities](https://uhm-descartes.github.io/ee342/experiences), providing a structured set of challenges enabling you to acquire mastery of material.
+  * [Assessments](https://uhm-descartes.github.io/ee342/assessments), which help you determine if you have acquired mastery of the material.
 
 ## About the instructor
 
