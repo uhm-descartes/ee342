@@ -24,4 +24,4 @@ morea_labels:
 morea_sort_order: 10
 ---
 
-Overview of ICS 199, and some simple initial tasks to get oriented and ready for the course.
+Overview of EE 342, and some simple initial tasks to get oriented and ready for the course.

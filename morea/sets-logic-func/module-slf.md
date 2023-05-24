@@ -1,5 +1,5 @@
 ---
-title: "Sets, Functions"
+title: "Sets, Logic and Functions"
 published: true
 morea_coming_soon: false
 morea_id: module-slf
