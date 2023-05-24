@@ -14,7 +14,7 @@ morea_experiences:
 morea_assessments:
    - assessment-slf
 morea_type: module
-morea_icon_url: /morea/CHANGE-ME/CHANGE-ME.png
+morea_icon_url: /morea/sets-logic-func/cantor.png
 morea_start_date: "2021-07-12"
 morea_end_date: "2021-07-16"
 morea_labels:

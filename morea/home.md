@@ -19,7 +19,7 @@ knowledge of python.
 
 ## Pedagogy
 
-EE 342 is structured as a series of [modules](/modules), each taking
+EE 342 is structured as a series of [modules](https://uhm-descartes.github.io/ee342/modules), each taking
 approximately a week to complete. The course will operate in partially
 flipped mode. We will spend class time partly in lectures, and partly
 to do problems. The setup of the course assumes that you are
