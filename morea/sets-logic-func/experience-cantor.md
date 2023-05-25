@@ -48,7 +48,7 @@ represented without using a 1 in some representation (so 1/3, 2/3 both
 survive). These numbers form the Cantor set. There are a uncountably
 infinite number of such numbers (so the Cantor set has the same size
 as [0,1]). What is even more amazing is the "length" of the Cantor set.
-The total length removed in step $i$ is $$\frac{2^{i-1}}{3^i}=\frac12 \frac{2^i}{3^i}.$$ Summing over all $i$, the total length removed is
+The total length removed in step $i$ is $$\frac{2^{i-1}}{3^i}=\frac12 \frac{2^i}{3^i}.$$ Summing over all $$i\ge 1$$, the total length removed is
 
 $$ \frac12 (\frac 23 + (\frac 23)^2 + \cdots ) = \frac12 \frac{\frac 23}{1-\frac 23} =1,$$
 
