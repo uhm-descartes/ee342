@@ -1,9 +1,9 @@
 ---
-title: "Story of Sets"
+title: "Logicomix"
 published: true
 morea_id: experience-slf
 morea_type: experience
-morea_summary: "Story of Sets"
+morea_summary: "Logicomix"
 morea_start_date: "2023-07-15T23:00"
 morea_labels:
 ---
