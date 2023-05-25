@@ -1,5 +1,5 @@
 ---
-title: "Introduction to ICS 199"
+title: "Introduction to EE 342"
 published: true
 morea_coming_soon: false
 morea_id: example-introduction
