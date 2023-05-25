@@ -21,7 +21,7 @@ morea_icon_url: /morea/example-introduction/introduction.jpg
 morea_start_date: "2021-07-06"
 morea_end_date: "2021-07-09T23:00"
 morea_labels:
-morea_sort_order: 10
+morea_sort_order: 01
 ---
 
 Overview of EE 342, and some simple initial tasks to get oriented and ready for the course.

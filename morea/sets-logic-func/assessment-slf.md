@@ -6,7 +6,7 @@ morea_summary: "Assessment"
 morea_outcomes_assessed:
  # - outcome-CHANGE-ME
 morea_type: assessment
-morea_start_date: "2021-07-16T09:00"
+morea_start_date: "2023-08-21T09:00"
 morea_labels:
 ---
 # Quiz 1
@@ -30,7 +30,4 @@ indicator functions are functions from \\(\Omega\\) to \\(\\{0,1\\}\\).
 4. If \\(\Omega = \\{ 1, \ldots,  n \\}\\), how many elements does the set of all subsets of \\(\Omega\\) have? We usually call this set the *power set* of \\(\Omega\\), abbreviated as \\(2^{\Omega}\\) (do you see the reason for this notation?). 
 
 5. Let \\(A_1,\ldots, A_n\\) be subsets of \\(\Omega\\). Can you express
-the indicator functions 
-$${\mathbf 1}_{A_1\cap A_2\cap \cdots A_n} \textrm{ and } {\mathbf 1}_{A_1\cup A_2\cup \cdots A_n}$$ 
-in terms of the indicator functions $${\mathbf 1}_{A_1}$$,
-$${\mathbf 1}_{A_2}$$ \\(\cdots\\) \\({\mathbf 1}_{A_n}\\)?
+the indicator functions $${\mathbf 1}_{A_1\cap A_2\cap \cdots A_n}$$ and $${\mathbf 1}_{A_1\cup A_2\cup \cdots A_n}$$ in terms of the indicator functions $${\mathbf 1}_{A_1}$$, $${\mathbf 1}_{A_2}$$ \\(\cdots\\) \\({\mathbf 1}_{A_n}\\)?
