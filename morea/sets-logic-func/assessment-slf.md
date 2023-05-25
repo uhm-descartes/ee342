@@ -22,12 +22,13 @@ In all the following,
 \\(S \cap (T \cup U) = (S \cap T) \cup (S \cap U)\\) and 
 \\(S \cup (T \cap U) = (S \cup T) \cap (S \cup U)\\).
 
-* Prove that \\((\bigcup_n S_n)^c = \bigcap_n S_n^c\\), \\((\bigcap_n S_n)^c = \bigcup_n S_n^c\\).
+* Prove that \\((\bigcup_n S_n)^c = \bigcap_n S_n^c\\), and that \\((\bigcap_n S_n)^c = \bigcup_n S_n^c\\).
 
-* Let \\(A = \sets{0,1}\times \sets{0,1} \times \sets{0,1}\\)? How many elements does \\(A\\) have?
-Write them out.
+* Let \\(A = \{0,1\}\times \{0,1\} \times \{0,1\}\\)? How many elements does \\(A\\) have? Write them out.
 
-* If \\(\Omega = \sets{1\upto n}\\), how many elements does the set of all subsets of \\(\Omega\\) have?
+* If \\(\Omega = \{1, \ldots,  n\}\\), how many elements does the set of all subsets of \\(\Omega\\) have? We usually call this set the \emph{power set} of \\(\Omega\\), abbreviated as \\(2^{\Omega}\\) (do you see the reason for this notation?). 
 
-We usually call this set the \emph{power set} of \\(\Omega\\), abbreviated as \\(2^{\Omega}\\) (the reason for this notation will soon become clear). 
-
+* Let \\(A_1\upto A_n\\) be subsets of \\(\Omega\\). Can you express
+the indicator functions \\(\ind_{A_1\cap A_2 \cap \cdots A_n}\\) and
+\\(\ind_{A_1\cup A_2 \cup \cdots A_n}\\) in terms of the indicator
+functions \\(\ind_{A_1}\\), \\(\ind_{A_2}\\) \\(\cdots\\) \\(\ind_{A_n}\\)?
