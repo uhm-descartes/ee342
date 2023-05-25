@@ -18,17 +18,17 @@ Please access quiz 1 on Laulima and submit it by the due date listed therein.
 In all the following, 
 \\(\Omega\\) is a set, and \\(S\\), \\(T\\) and \\(U\\) are subsets of \\(\Omega\\).
 
-* Prove that union/intersections distribute over each other, namely
+1. Prove that union/intersections distribute over each other, namely
 \\(S \cap (T \cup U) = (S \cap T) \cup (S \cap U)\\) and 
 \\(S \cup (T \cap U) = (S \cup T) \cap (S \cup U)\\).
 
-* Prove that \\((\bigcup_n S_n)^c = \bigcap_n S_n^c\\), and that \\((\bigcap_n S_n)^c = \bigcup_n S_n^c\\).
+2. Prove that \\((\bigcup_n S_n)^c = \bigcap_n S_n^c\\), and that \\((\bigcap_n S_n)^c = \bigcup_n S_n^c\\).
 
-* Let \\(A = \\{ 0,1 \\} \times \\{ 0,1 \\} \times \\{ 0,1 \\} \\)? How many elements does \\(A\\) have? Write them out.
+3. Let \\(A = \\{ 0,1 \\} \times \\{ 0,1 \\} \times \\{ 0,1 \\} \\)? How many elements does \\(A\\) have? Write them out.
 
-* If \\(\Omega = \\{ 1, \ldots,  n \\}\\), how many elements does the set of all subsets of \\(\Omega\\) have? We usually call this set the *power set* of \\(\Omega\\), abbreviated as \\(2^{\Omega}\\) (do you see the reason for this notation?). 
+4. If \\(\Omega = \\{ 1, \ldots,  n \\}\\), how many elements does the set of all subsets of \\(\Omega\\) have? We usually call this set the *power set* of \\(\Omega\\), abbreviated as \\(2^{\Omega}\\) (do you see the reason for this notation?). 
 
-* Let \\(A_1,\ldots, A_n\\) be subsets of \\(\Omega\\). Can you express
-the indicator functions \(({\mathbf 1}_{A_1\cap A_2 \cap \cdots A_n}\\) and
+5. Let \\(A_1,\ldots, A_n\\) be subsets of \\(\Omega\\). Can you express
+the indicator functions \\({\mathbf 1}_{A_1\cap A_2 \cap \cdots A_n}\\) and
 \\({\mathbf 1}_{A_1\cup A_2 \cup \cdots A_n}\\) in terms of the indicator
 functions \\({\mathbf 1}}_{A_1}\\), \\({\mathbf 1}}_{A_2}\\) \\(\cdots\\) \\({\mathbf 1}_{A_n}\\)?
