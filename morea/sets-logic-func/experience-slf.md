@@ -13,7 +13,7 @@ morea_labels:
 Once you get familiar with set comprehension, consider the following (Russell's
 paradox): \\(A\\) is the set of all sets that are not members of themselves, specifically
 
-$$A = \{ Z: Z \notin Z\ }.$$
+$$A = \{ Z: Z \notin Z \}.$$
 
 The problem now is: is \\(A\\) a member of \\(A\\)? Well, if so, \\(A\notin A\\)
 (by the definition of the set). But if not, \\(A\notin A\\), and the
@@ -25,6 +25,11 @@ philosophy. A really nice (but some may say unfairly exaggerated in
 some aspects) account on the beginnings of set theory in a period of
 transformation in math is in the wonderful graphic novel,
 [Logicomix](https://www.amazon.com/Logicomix-search-truth-Apostolos-Doxiadis/dp/1596914521).
+
+A small note about Russell's paradox so I don't leave you hanging. The
+common version of axioms in set theory in vogue is the Zermelo-Fraenkel
+version with the axiom of choice (abbreviated as the ZFC), which
+explicitly restricts the generality of set comprehension statements.
 
 
 

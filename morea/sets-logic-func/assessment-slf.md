@@ -15,19 +15,19 @@ Please access quiz 1 on Laulima and submit it by the due date listed therein.
 
 # Problems in class
 
-We will work on these problems in class, in groups. Please come prepared by
-finishing both readings *before* you come to class. In all the following, 
-$\Omega$ is a set, and $S$, $T$ and $U$ are subsets of $\Omega$.
+In all the following, 
+\\(\Omega\\) is a set, and \\(S\\), \\(T\\) and \\(U\\) are subsets of \\(\Omega\\).
 
 * Prove that union/intersections distribute over each other, namely
-$S \cap (T \cup U) = (S \cap T) \cup (S \cap U)$ and 
-$S \cup (T \cap U) = (S \cup T) \cap (S \cup U)$.
+\\(S \cap (T \cup U) = (S \cap T) \cup (S \cap U)\\) and 
+\\(S \cup (T \cap U) = (S \cup T) \cap (S \cup U)\\).
 
-* Prove that $(\bigcup_n S_n)^c = \bigcap_n S_n^c$, $(\bigcap_n S_n)^c = \bigcup_n S_n^c$.
+* Prove that \\((\bigcup_n S_n)^c = \bigcap_n S_n^c\\), \\((\bigcap_n S_n)^c = \bigcup_n S_n^c\\).
 
-* Let $A = \sets{0,1}\times \sets{0,1} \times \sets{0,1}$? How many elements does $A$ have?
+* Let \\(A = \sets{0,1}\times \sets{0,1} \times \sets{0,1}\\)? How many elements does \\(A\\) have?
 Write them out.
 
-* If $\Omega = \sets{1\upto n}$, how many elements does the set of all subsets of $\Omega$ have?
-We usually call this set the \emph{power set} of $\Omega$. 
+* If \\(\Omega = \sets{1\upto n}\\), how many elements does the set of all subsets of \\(\Omega\\) have?
+
+We usually call this set the \emph{power set} of \\(\Omega\\), abbreviated as \\(2^{\Omega}\\) (the reason for this notation will soon become clear). 
 
