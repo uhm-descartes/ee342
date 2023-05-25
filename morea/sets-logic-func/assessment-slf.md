@@ -32,5 +32,5 @@ indicator functions are functions from \\(\Omega\\) to \\(\\{0,1\\}\\).
 5. Let \\(A_1,\ldots, A_n\\) be subsets of \\(\Omega\\). Can you express
 the indicator functions 
 $${\mathbf 1}_{A_1\cap A_2\cap \cdots A_n} \textrm{ and } {\mathbf 1}_{A_1\cup A_2\cup \cdots A_n}$$ 
-in terms of the indicator functions \\({\mathbf 1}_{A_1}\\),
-\\({\mathbf 1}_{A_2}\\) \\(\cdots\\) \\({\mathbf 1}_{A_n}\\)?
+in terms of the indicator functions $${\mathbf 1}_{A_1}$$,
+$${\mathbf 1}_{A_2}$$ \\(\cdots\\) \\({\mathbf 1}_{A_n}\\)?
