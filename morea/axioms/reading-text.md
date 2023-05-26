@@ -1,5 +1,5 @@
 ---
-title: "Textbook content"
+title: "Guide for text"
 published: true
 morea_id: reading-axioms-text
 morea_summary: "Section 1.2"
@@ -17,7 +17,6 @@ Compare the development in the handout with the text. You will see
 the text mentions _events_, but not the space of events explicitly. 
 
 You have the box about properties of probability laws on page 14 of
-the text.  Do you notice that for (a) and (b) (and therefore (c)) as
-well, we have derived exact analogs in terms of identity functions?
-Can you write an analog for (d) in terms of identity functions and
-prove it?
+the text.  Do you notice that we have derived exact analogs of (a),
+(b) and (c) in terms of indicator functions?  Can you write an analog
+for (d) in terms of indicator functions and prove it? 
