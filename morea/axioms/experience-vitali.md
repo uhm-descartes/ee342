@@ -87,7 +87,7 @@ In the uniform probability law, $$P(H) =
 P(H\oplus r)$$ for any $$r$$ because the two sets are just shifts of
 each other. Using Probability Axiom 2, we have
 
-$$1= P([0,1]) = \sum_{r \textrm{ rational}} P(H \oplus r) = \sum_{r \textrm{ rational}} P(H). \hfill(1)$$
+$$1= P([0,1]) = \sum_{r \textrm{ rational}} P(H \oplus r) = \sum_{r \textrm{ rational}} P(H). \qquad\qquad\qquad\qquad\qquad(1)$$
 
 We are allowed to write sum over rational numbers since there is a one
 to one correspondance between rationals and natural numbers (so the
