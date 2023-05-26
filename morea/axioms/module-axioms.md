@@ -23,7 +23,6 @@ morea_sort_order: 21
 ---
 
 The photo you see is of Andrey Kolmogorov. who fundamentally
-transformed probability theory in addition to many other areas. His
-academic career started as an editor of his school journal at the age
-of 5---where he noticed regularities in the sum of the first $$n$$
-odd numbers (the first $$n$$ odd numbers sum to $$n^2$$ of course).
+transformed probability theory (and many other areas). His academic
+career started as an editor of his school journal at the age of
+5, where he noticed that the first $$n$$ odd numbers sum to $$n^2$$.
