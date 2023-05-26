@@ -11,7 +11,7 @@ morea_readings:
    - reading-axioms
 morea_experiences:
    - experience-counting
-   - experience-banachtarski
+   - experience-vitali
 morea_assessments:
    - assessment-axioms
 morea_type: module
