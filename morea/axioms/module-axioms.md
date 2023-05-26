@@ -22,4 +22,13 @@ morea_labels:
 morea_sort_order: 21
 ---
 
-Setup of a probability space
+The photo you see associated with this module is Andrey Nikolaevich
+Kolmogorov (1903-1987), who has fundamentally transformed probability
+theory, logic, topology, information theory, computational complexity
+mechanics, and many other areas. His academic career started with his
+contributions as an editor of the mathematical section of his school
+journal at the age of 5---where he noticed that regularity in the sum
+of the first $$n$$ odd numbers (the first $$n$$ odd numbers sum to
+$$n^2$$). Kolmogorov also contributed our modern probability space
+formulation at a later age.
+

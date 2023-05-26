@@ -8,14 +8,29 @@ morea_labels:
 ---
 
 Review the basics of sets, operations on sets (union, intersection,
-cartesian products, and algebra of set operations) from Section 1.1 of
-the textbook. This may be material you are already familiar with, but
-its importance cannot be understated. You will need a little more than 
-Section 1.1 for this course, and the rest in the second reading associated
-with this topic.
+and algebra of set operations) from Section 1.1 of the textbook. This
+may be material you are already familiar with, but its importance
+cannot be understated. 
 
-Sets seem deceptively simple, but are also full of unexpected
-surprises, and in many ways, the definition and basics of sets is also
-the beginnings of modern mathematics. You will get a preview of these
-things in this module, and there is a lifetime of things to be explored here.
+The text uses Cartesian products without definitions at the top of
+page 5 where it talks about tuples.  The sets of ordered pairs of real
+numbers is called $${\mathbb R}^2$$. This notation comes because the
+set of ordered pairs of real numbers is really the Cartesian product
+$${\mathbb R} \times {\mathbb R}$$ (hence abbreviated as $${\mathbb
+R}^2$$). Same for triplets. Thinking in terms of Cartesian products
+explicitly has lot of advantages down the line (and the book uses them
+too with the assumption you already know it).
+
+In general, you may think this section is simple or high school stuff.
+But the true beauty of this subject is primarily because of how deep
+even such basic stuff can be developed, and can yield so many
+astonishing conclusions. It is not for nothing that mathematics is
+often called the queen of all arts in much of the world (except in the
+United States, where we are taught implicitly or explicitly to look
+down on it as a tool or to fear it as Sauron himself). But no longer.
+
+Probability theory is one area in math whose stunning beauty compares
+with the rarest of human accomplishments in any endeavor. You will get
+a preview of these things in this course among the experiences, and
+there is a lifetime of things to be explored starting from there.
 

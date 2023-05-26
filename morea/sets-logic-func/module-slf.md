@@ -22,4 +22,5 @@ morea_labels:
 morea_sort_order: 11
 ---
 
-Sets, logic and functions
+The picture you saw associated with the module represents the construction of a Cantor set, which you can learn about in the (optional) experiential learning
+section of the same name. Both experiential learning sections here are optional.
