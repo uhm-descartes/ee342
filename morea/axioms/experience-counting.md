@@ -20,8 +20,8 @@ By definition, the cardinality of $$A$$ and $$B$$ are equal if there is
 a bijection from $$A$$ to $$B$$. This is how we compare infinite sets.
 
 **Definition** All finite sets are countable. An infinite set $$A$$ is
-_countable_ iff there is a bijection $$c:A\to \naturals$$, where
-$$\naturals=\sets{1,2, \ldots$$ is the set of all natural numbers.
+_countable_ iff there is a bijection $$c:A\to {\mathbb N}$$, where
+$${\mathbb N}=\sets{1,2, \ldots$$ is the set of all natural numbers.
 
 Your handout gives many examples of countable sets. Informally this means
 that given an infinite sheet of paper and infinite time, you could write all
@@ -30,9 +30,16 @@ below another as a list).
 
 [Cantor](en.wikipedia.org/wiki/Georg_Cantor) came up with a stunningly
 beautiful argument to prove that the set $$[0,1]$$ is not countable.
-While both $$[0,1]$$ and $$\naturals$$ have an infinite number of
+While both $$[0,1]$$ and $${\mathbb N}$$ have an infinite number of
 elements, the size of $$[0,1]$$ is a bigger infinity than the size of
-$$\naturals$$. 
+$${\mathbb N}$$. 
+
+This means that even given infinite time, you couldn't write out all
+elements of $$[0,1]$$ one below another in that infinite sheet of
+paper (in any order). This is not because there isn't a notion of "the
+next real number after .1". In fact, you could write all rational
+numbers one below another (though there is no "next rational number
+after .1" either).
 
 There are any number of articles on this on the Internet, here 
 is [one]().
