@@ -29,5 +29,11 @@ indicator functions are functions from \\(\Omega\\) to \\(\\{0,1\\}\\).
 
 4. If \\(\Omega = \\{ 1, \ldots,  n \\}\\), how many elements does the set of all subsets of \\(\Omega\\) have? We usually call this set the *power set* of \\(\Omega\\), abbreviated as \\(2^{\Omega}\\) (do you see the reason for this notation?). 
 
+6. Can you show that 
+   * If $$A \subset B$$, then $${\mathbf 1}_A \le {\mathbf 1}_B$$
+   * If $$A$$ and $$B$$ are disjoint, then $${\mathbf 1}_{A\cup B}={\mathbf 1}_A + {\mathbf 1}_B$$
+   * For any $$A$$ and $$B$$, $${\mathbf 1}_{A\cup B} \le {\mathbf 1}_A + {\mathbf 1}_B$$
+
 5. Let \\(A_1,\ldots, A_n\\) be subsets of \\(\Omega\\). Can you express
 the indicator functions $${\mathbf 1}_{A_1\cap A_2\cap \cdots A_n}$$ and $${\mathbf 1}_{A_1\cup A_2\cup \cdots A_n}$$ in terms of the indicator functions $${\mathbf 1}_{A_1}$$, $${\mathbf 1}_{A_2}$$ \\(\cdots\\) \\({\mathbf 1}_{A_n}\\)?
+

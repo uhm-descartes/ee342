@@ -89,9 +89,10 @@ each other. Using Probability Axiom 2, we have
 
 $$1= P([0,1]) = \sum_{r \textrm{ rational}} P(H \oplus r) = \sum_{r \textrm{ rational}} P(H). \hfill(1)$$
 
-We are allowed to write sum over rational numbers since there is a one to 
-one correspondance between rationals and natural numbers (so the above is really
-like $$\sum_{i\ge 1}$$. 
+We are allowed to write sum over rational numbers since there is a one
+to one correspondance between rationals and natural numbers (so the
+sum over rationals is really like $$\sum_{i\ge 1}$$, except the indices
+are called by different names).
 
 Now we have a problem with Equation (1). The left side of the equation
 is 1. The right side is 0 if $$P(H)=0$$, and $$\infty$$ if $$P(H)$$ is

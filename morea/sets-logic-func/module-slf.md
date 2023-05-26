@@ -7,7 +7,7 @@ morea_prerequisites:
 morea_outcomes:
    - outcome-slf
 morea_readings:
-   - reading-text
+   - reading-slf-text
    - reading-slf
 morea_experiences:
    - experience-slf

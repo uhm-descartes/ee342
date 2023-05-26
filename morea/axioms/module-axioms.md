@@ -7,7 +7,7 @@ morea_prerequisites:
 morea_outcomes:
    - outcome-axioms
 morea_readings:
-   - reading-text
+   - reading-axioms-text
    - reading-axioms
 morea_experiences:
    - experience-counting
