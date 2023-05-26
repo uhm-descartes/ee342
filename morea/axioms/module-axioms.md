@@ -22,8 +22,8 @@ morea_labels:
 morea_sort_order: 21
 ---
 
-The photo you see is Andrey Nikolaevich
-Kolmogorov (1903-1987). who fundamentally transformed probability
-theory, logic, topology, information theory, computational complexity
-mechanics, and many other areas. 
-
+The photo you see is of Andrey Kolmogorov. who fundamentally
+transformed probability theory in addition to many other areas. His
+academic career started as an editor of his school journal at the age
+of 5---where he noticed regularities in the sum of the first $$n$$
+odd numbers (the first $$n$$ odd numbers sum to $$n^2$$ of course).
