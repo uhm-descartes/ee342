@@ -6,5 +6,5 @@ morea_type: outcome
 morea_sort_order: 1
 ---
 
-  * You understand the role of each module component
-  * 
+  * You understand how to use modules, submit assignments and follow in class
+

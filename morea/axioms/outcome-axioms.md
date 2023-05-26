@@ -3,7 +3,7 @@ title: "Setup of a probability space"
 published: true
 morea_id: outcome-axioms
 morea_type: outcome
-morea_sort_order: 10
+morea_sort_order: 21
 ---
 
   * You understand what sample space, an event and a probability assignment are

@@ -1,5 +1,5 @@
 ---
-title: "Outcomes"
+title: "Sets, Logic and Functions"
 published: true
 morea_id: outcome-slf
 morea_type: outcome

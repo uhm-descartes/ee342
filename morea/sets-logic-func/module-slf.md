@@ -22,5 +22,7 @@ morea_labels:
 morea_sort_order: 11
 ---
 
-The picture you saw associated with the module represents the construction of a Cantor set, which you can learn about in the (optional) experiential learning
-section of the same name. Both experiential learning sections here are optional.
+The picture you see represents the construction of a
+Cantor set, which you can learn about in the (optional) experiential
+learning section of this module. 
+
