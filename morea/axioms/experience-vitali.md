@@ -34,11 +34,11 @@ general, and $$\sim$$ in particular, is that it can partition (break
 into disjoint sets) $$[0,1]$$ based on the relation. To make this
 clear, for any $$a \in [0,1]$$, let the family of $$a$$ be defined as
 
-$$H_a = \{ x: x\in [0,] \textrm{ and } a \sim x \}.$$
+$$H_a = \{ x: x\in [0,1] \textrm{ and } a \sim x \}.$$
 
 If you think about it, if $$a \sim b$$, then $$H_a = H_b$$ (prove
 using the three properties). If $$a\not\sim b$$, then $$H_a \cap H_b =
-{}$$ (the third property gives this insight). So all related numbers
+\{\}$$ (the third property gives this insight). So all related numbers
 live in their own family. Any two distinct families are
 disjoint. Every number is in some family. So $$[0,1]$$ is broken down
 into disjoint families based on the relation $$\sim$$. Now that you
@@ -57,11 +57,15 @@ rational numbers.
 
 When we have an uncountably infinite number of sets, it is not clear
 how to define their Cartesian product (tuples don't work, since the
-index is not countable). But regardless, we use something called the
-axiom of choice, that assures us that in _any_ collection of sets, we
-can pick one element from each set. Let us go ahead and choose
-one representative of each family, call it $$H$$. 
+index is not countable). Whether we can have have something like a
+Cartesian product is a matter of much debate, but in the ZFC version of
+set theory we use (without knowing the name), we adopt the convention
+that such a Cartesian product is possible. This is called the
+"Axiom of Choice", that assures us that in _any_ collection of sets, we
+can pick one element from each set. 
 
+Let us go ahead and choose one representative of each family we formed
+using the relation $\sim$, and call it $$H$$.
 For any number $$z\in [0,1]$$, let $$z+r \mod 1$$ represent the number
 obtained by shifting $$z$$ to the right by $$r$$ (and subtracting 1
 if $$z+r > 1$$. Now let $$H\oplus r$$ be the set
@@ -83,7 +87,7 @@ In the uniform probability law, $$P(H) =
 P(H\oplus r)$$ for any $$r$$ because the two sets are just shifts of
 each other. Using Probability Axiom 2, we have
 
-$$1= P([0,1]) = \sum_{r \textrm{ rational}} P(H \oplus r) = \sum_{r \textrm{ rational}} P(H). \hfill\eqno{(1)}$$
+$$1= P([0,1]) = \sum_{r \textrm{ rational}} P(H \oplus r) = \sum_{r \textrm{ rational}} P(H). \hfill(1)$$
 
 We are allowed to write sum over rational numbers since there is a one to 
 one correspondance between rationals and natural numbers (so the above is really
@@ -98,5 +102,7 @@ $$H$$ therefore simply cannot be measured, it breaks the axioms of
 length/probability if we assign it anything at all! Now you know what I mean
 when I said we cannot assign probabilities or lengths to sets like $$H$$---they
 are so weird that if you do so, you break the axioms of probabilities/lengths.
-
+The crucial role played by the Axiom of Choice cannot be taken away, in fact,
+it is known that the Axiom of Choice is equivalent to the existence of such
+weird sets. 
 
