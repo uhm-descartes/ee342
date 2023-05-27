@@ -41,7 +41,14 @@ next real number after .1". In fact, you could write all rational
 numbers one below another (though there is no "next rational number
 after .1" either).
 
-There are any number of articles on this on the Internet, here 
-is [one]().
+There are any number of articles on this on the Internet, here is a
+short [video](https://www.youtube.com/watch?v=0HF39OWyl54) explaining
+it. This argument is very fundamental---it is used to prove a lot of
+other things, for example that the Halting Problem is undecidable (in
+very imprecise terms, this means there are problems that the Turing
+model of computation cannot solve). Who knows, you may get to use it
+in grad school for your research too, as one of my students did to
+show that some models cannot be infered well no matter how much
+data you see.
 
 
