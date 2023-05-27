@@ -51,22 +51,24 @@ uncountably infinite.
 These families have another structure we exploit: given any one member
 $$z$$ of a family, you can get all the others by adding every rational
 number between 0 and 1 to it, with the caveat that if for some
-rational number $$0\le r\le 1$$, $$z+r>1$$, then you interpret the
+rational number $$0r$$, $$z+r>1$$, then you interpret the
 result as $$z+r-1$$.  As a shorthand for this operation, we define for
+$$z, r \in [0,1]$$, 
 
-$$z, r \in [0,1]$$, $$ z + r \mod 1 \ed \begin{cases} z+r & \textrm{
-if } z+r < 1\\ z+r-1 & \textrm{ if } z+r > 1.  \end{cases}$$ 
+$$ z + r \mod 1 \stackrel{\textrm{def}}{=} \begin{cases} z+r & \textrm{
+if } z+r \le 1\\ z+r-1 & \textrm{ if } z+r > 1.  \end{cases}$$ 
 
-So the size of each family is simply the size of the set of rational
-numbers (which, as we have seen, is countable, and hence has a
-bijection with natural numbers $$\mathbb N$$). So every family can be
-thought of as an offset version of the set of rational numbers.
+With this observation, notice that the size of each family is simply
+the size of the set of rational numbers (which, as we have seen, is
+countable, and hence has a bijection with natural numbers $$\mathbb
+N$$). So every family can be thought of as an offset version of the
+set of rational numbers.
 
 When we have an uncountably infinite number of non-empty sets, it is
 not clear how to define their Cartesian product (tuples don't work,
 since the index is not countable). Whether we can have have something
 like a Cartesian product is a matter of much debate, but in the ZFC
-version of set theory axioms we use (without knowing the name), we
+version of set theory axioms (remember [Logicomix](https://uhm-descartes.github.io/ee342/morea/sets-logic-func/experience-slf.html) from the previous [module](https://uhm-descartes.github.io/ee342/modules/module-slf/)?) we use (without knowing the name), we
 adopt an axiom that such a Cartesian product is possible. This
 is called the "Axiom of Choice", that assures us that in _any_
 collection of non-empty sets, we can pick one element from each set.
