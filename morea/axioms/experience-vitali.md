@@ -14,11 +14,14 @@ One of the points I have mentioned is that when $$\Omega$$ is uncountable,
 we exclude subsets of $$\Omega$$ before assigning probabilities. It is not
 that they have zero probability, but they cannot participate at all!
 
-Consider the uniform pdf over $$[0,1]$$ we covered in this module. Under
-this pdf, the probability of an interval is its length, and we generalize the
-usage of length to mean the probability assigned to this set. We will construct
-a subset of $$[0,1]$$ that CANNOT have a length (not even length 0). Assigning
-any number to its length just breaks the notion of length/probability altogether!
+Consider the uniform pdf over $$[0,1]$$ we covered in this
+module. Under this pdf, the probability of an interval is its
+length. We generalize the observation and say that the length of any
+subset of $$[0,1]$$ is the probability assigned to this set under the
+uniform pdf. We will construct a subset of $$[0,1]$$ that CANNOT have
+a length/probability (not even length 0). Assigning _any_ value to its
+length/probability simply breaks the notion of length/probability
+altogether.
 
 First, you need to know that the set of rational numbers is
 countable. We define the following relation $$a\sim b$$ to mean
@@ -47,37 +50,40 @@ uncountably infinite.
 
 These families have another structure we exploit: given any one member
 $$z$$ of a family, you can get all the others by adding every rational
-number to it, with the caveat that if for some rational number $$r$$,
-$$z+r>1$$, then you interpret the result as $$z+r-1$$ (as a shorthand,
-we will write it as $$z+r \mod 1$$). So the size of each family is
-simply the size of the set of rational numbers (which, as we have
-seen, is countable, and hence has a bijection with natural numbers
-$$\mathbb N$$). So every family is an offset version of the set of
-rational numbers.
+number between 0 and 1 to it, with the caveat that if for some
+rational number $$0\le r\le 1$$, $$z+r>1$$, then you interpret the
+result as $$z+r-1$$.  As a shorthand for this operation, we define for
 
-When we have an uncountably infinite number of sets, it is not clear
-how to define their Cartesian product (tuples don't work, since the
-index is not countable). Whether we can have have something like a
-Cartesian product is a matter of much debate, but in the ZFC version of
-set theory we use (without knowing the name), we adopt the convention
-that such a Cartesian product is possible. This is called the
-"Axiom of Choice", that assures us that in _any_ collection of sets, we
-can pick one element from each set. 
+$$z, r \in [0,1]$$, $$ z + r \mod 1 \ed \begin{cases} z+r & \textrm{
+if } z+r < 1\\ z+r-1 & \textrm{ if } z+r > 1.  \end{cases}$$ 
+
+So the size of each family is simply the size of the set of rational
+numbers (which, as we have seen, is countable, and hence has a
+bijection with natural numbers $$\mathbb N$$). So every family can be
+thought of as an offset version of the set of rational numbers.
+
+When we have an uncountably infinite number of non-empty sets, it is
+not clear how to define their Cartesian product (tuples don't work,
+since the index is not countable). Whether we can have have something
+like a Cartesian product is a matter of much debate, but in the ZFC
+version of set theory axioms we use (without knowing the name), we
+adopt an axiom that such a Cartesian product is possible. This
+is called the "Axiom of Choice", that assures us that in _any_
+collection of non-empty sets, we can pick one element from each set.
 
 Let us go ahead and choose one representative of each family we formed
-using the relation $\sim$, and call it $$H$$.
-For any number $$z\in [0,1]$$, let $$z+r \mod 1$$ represent the number
-obtained by shifting $$z$$ to the right by $$r$$ (and subtracting 1
-if $$z+r > 1$$. Now let $$H\oplus r$$ be the set
+using the relation $$\sim$$, and call it $$H$$. For $$r\in[0,1]$$ let
+$$H\oplus r$$ be the set
 
 $$ H\oplus r =\{ z+r \mod 1 : z \in H \}. $$
 
-Now note that $$H\oplus r$$ contains one member of each family, but
-different from the family member in $$H$$ (by an amount equal to a
-right shift by $$r$$, subtracting 1 if needed). But since very family
-can be thought of as an offset version of the set of rational numbers,
+Now note that for rational $$r\in (0,1]$$, $$H\oplus r$$ also contains
+one member of each family, but different from the family member in
+$$H$$ (by an amount equal to a right shift by $$r$$, subtracting 1 if
+needed). But since very family can be thought of as an offset version
+of the set of rational numbers,
 
-$$[0,1] = \bigcup_{r \textrm{ rational}} H \oplus r.$$
+$$[0,1] = \bigcup_{\substack{r \in [0,1]\\r \textrm{ rational}}} H \oplus r.$$
 
 Now, the set of rational numbers has a bijection with the set of
 natural nubmers, so the above equation is a way to write $$[0,1]$$ as
@@ -87,7 +93,7 @@ In the uniform probability law, $$P(H) =
 P(H\oplus r)$$ for any $$r$$ because the two sets are just shifts of
 each other. Using Probability Axiom 2, we have
 
-$$1= P([0,1]) = \sum_{r \textrm{ rational}} P(H \oplus r) = \sum_{r \textrm{ rational}} P(H). \qquad\qquad\qquad\qquad\qquad(1)$$
+$$1= P([0,1]) = \sum_{\substack{r \in [0,1]\\r \textrm{ rational}}} P(H \oplus r) = \sum_{\substack{r\in[0,1]\\r \textrm{ rational}}} P(H). \qquad\qquad\qquad\qquad\qquad(1)$$
 
 We are allowed to write sum over rational numbers since there is a one
 to one correspondance between rationals and natural numbers (so the

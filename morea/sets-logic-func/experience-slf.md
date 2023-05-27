@@ -4,7 +4,7 @@ published: true
 morea_id: experience-slf
 morea_type: experience
 morea_summary: "A graphic novel"
-morea_start_date: "2023-07-15T23:00"
+morea_start_date: "2023-08-21"
 morea_labels:
 ---
 
@@ -29,7 +29,9 @@ transformation in math is in the wonderful graphic novel,
 A small note about Russell's paradox so I don't leave you hanging. The
 common version of axioms in set theory in vogue is the Zermelo-Fraenkel
 version with the axiom of choice (abbreviated as the ZFC), which
-explicitly restricts the generality of set comprehension statements.
+explicitly restricts the generality of set comprehension statements. We
+will see the Axiom of Choice in one of the optional [experiences](https://uhm-descartes.github.io/ee342/morea/axioms/experience-vitali.html) in the 
+next [module](https://uhm-descartes.github.io/ee342/modules/module-axioms/)
 
 
 
