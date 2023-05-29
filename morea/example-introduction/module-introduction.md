@@ -9,12 +9,12 @@ morea_readings:
   #- reading-screencast-guided-tour-website
   #- reading-screencast-guided-tour-introduction
   #- reading-screencast-intro
-  - reading-other-sources
   #- reading-syllabus
 morea_experiences:
   #- experience-environment-configuration
   #- experience-introduce-yourself
   #- experience-learn-the-command-line
+  - experience-other-sources
 morea_assessments:
 morea_type: module
 morea_icon_url: /morea/example-introduction/introduction.jpg
