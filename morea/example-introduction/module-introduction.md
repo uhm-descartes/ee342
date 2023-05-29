@@ -9,7 +9,7 @@ morea_readings:
   #- reading-screencast-guided-tour-website
   #- reading-screencast-guided-tour-introduction
   #- reading-screencast-intro
-  #- reading-how-to-watch-screencasts-the-smart-way
+  - reading-other-sources
   #- reading-syllabus
 morea_experiences:
   #- experience-environment-configuration
