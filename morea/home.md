@@ -7,19 +7,20 @@ published: true
 
 ## Welcome to EE 342, Fall 2023
 
-EE 342 is an undergraduate level introduction to Probability and Statistics
-for Electrical and Computer Engineering students.
+EE 342 is an undergraduate level introduction to probability
+and statistics for students in ECE.
 
 
 ## Who should take this course
 
 This course is intended for undergraduates in ECE, or graduate
-students in ICS, Economics, or Business with a basic working
-knowledge of python.
+students in ICS, Economics, or Business with a basic working knowledge
+of python.
 
 ## Pedagogy
 
-EE 342 is structured as a series of [modules](https://uhm-descartes.github.io/ee342/modules), each taking
+EE 342 is structured as a series of
+[modules](https://uhm-descartes.github.io/ee342/modules), each taking
 approximately a week to complete. The course will operate in partially
 flipped mode. We will spend class time partly in lectures, and partly
 to do problems. The setup of the course assumes that you are
@@ -35,4 +36,4 @@ important parts. Modules have:
 
 ## About the instructor
 
-[Narayana Prasad Santhanam](https://ee.hawaii.edu/faculty/profile?usr=63) is a Professor of Electrical and Computer Engineering at the University of Hawaii. My research interests are at the intersection of machine learning, information theory and statistics. A particular focus is on high dimensional and complex problems, that are not amenable to traditional statistical methods and guarantees.
+[Narayana Prasad Santhanam](https://ee.hawaii.edu/faculty/profile?usr=63) is a Professor of Electrical and Computer Engineering at the University of Hawaii. My research interests are at the intersection of machine learning, information theory and statistics. A particular focus is on high dimensional and problems that are not amenable to traditional statistical methods and guarantees.

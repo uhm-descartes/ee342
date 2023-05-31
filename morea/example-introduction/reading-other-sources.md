@@ -2,7 +2,7 @@
 title: "Other resources"
 published: true
 morea_id: experience-other-sources
-morea_summary: "YouTube and elsewhere"
+morea_summary: "YouTube"
 morea_type: experience
 morea_labels:
 morea_start_date: "2023-08-21"
