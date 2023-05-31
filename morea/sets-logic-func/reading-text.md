@@ -14,14 +14,15 @@ cannot be understated.  You have to pay attention to two things that
 isn't explicitly mentioned (but used) in the text: Cartesian products
 and indicator functions. Please use the handout for these.
 
-The text uses Cartesian products without definition at the top of
-page 5 when it talks about tuples.  The sets of ordered pairs of real
-numbers is called $${\mathbb R}^2$$. This notation comes because the
-set of ordered pairs of real numbers is really the Cartesian product
-$${\mathbb R} \times {\mathbb R}$$ (hence abbreviated as $${\mathbb
-R}^2$$). Same for triplets. Thinking in terms of Cartesian products
-explicitly has lot of advantages down the line (and the book uses them
-too with the assumption you already know it).
+The text uses Cartesian products without definition at the top of page
+5 when it talks about tuples.  The sets of ordered pairs of real
+numbers is called $${\mathbb R}^2$$ in the text. This notation comes
+because the set of ordered pairs of real numbers is really the
+Cartesian product $${\mathbb R} \times {\mathbb R}$$ (hence
+abbreviated as $${\mathbb R}^2$$). Same for triplets. Thinking in
+terms of Cartesian products explicitly has lot of advantages down the
+line (and the book uses them too with the assumption you already know
+it).
 
 In general, you may think this section is simple or high school stuff.
 But the true beauty of this subject is primarily because of how deep
