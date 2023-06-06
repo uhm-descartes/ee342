@@ -1,5 +1,5 @@
 ---
-title: "Guide to the text"
+title: "Guide for the Text"
 published: true
 morea_id: reading-slf-text
 morea_summary: "Basics of sets"

@@ -1,5 +1,5 @@
 ---
-title: "Guide for text"
+title: "Guide for the Text"
 published: true
 morea_id: reading-axioms-text
 morea_summary: "Section 1.2"
