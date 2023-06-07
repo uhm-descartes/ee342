@@ -20,39 +20,45 @@ communications, randomized algorithms and machine learning, and they
 will be running problems. We will start off simple, and add more to
 each of them as we come across new topics. 
 
-* The first is a is a sequence of problems:
+1. The first is a is a sequence of problems:
 
-   ** Consider three coin tosses (imagine each coin shows Heads or
-     Tails). At this stage, can you write the sample space?
-     Probabilities?
-   ** Suppose the coin tosses are fair and every sequence of coin
-     tosses has equal probability. What is the probability assignment
-     for this model? How many distinct events are possible?
-   ** Instead, suppose the coin tosses are rigged. The person tosses the
-     coin ensures that you only see an even number of Heads, but makes
-	 sure that any sequence with an even number of Heads (0 or 2 Heads
-	 among 3 coin tosses) has the same probability. What is the probabilty
-	 assignment for this model?
-   ** Under each of the probability models, what is the probability we
-     observe 2 Heads
+	a. Consider three coin tosses (imagine each coin shows Heads or
+	   Tails). At this stage, can you write the sample space?
+	   Probabilities?
+  
+    b. Suppose the coin tosses are fair and every sequence of coin
+       tosses has equal probability. What is the probability
+       assignment for this model? How many distinct events are
+       possible?
 
-* Consider the following abstract model of a communication
-  link. There is a transmitter and a receiver through a channel. The
-  transmitter chooses 0 or 1 with equal probability. The channel
-  faithfully reproduces the input.  Write a sample space and a
-  probability assignment to model this problem.
+	c. Instead, suppose the coin tosses are rigged. The person tossing
+       the coin ensures that you only see an even number of Heads, but
+       makes sure that all sequences with an even number of Heads
+       (whether 0 or 2 Heads among 3 coin tosses) have equal
+       probabilities. What is the probabilty assignment for this
+       model?
+
+	d. Under each of the probability models, what is the probability
+       we observe 2 Heads
+
+* Consider the following abstract model of a perfect communication
+  link. There is a transmitter and a receiver, and the transmitter
+  transmits one bit through a channel. The transmitter chooses 0 or 1
+  with equal probability. The channel faithfully reproduces the input.
+  Write a sample space and a probability assignment to model this
+  problem.
 
 * QuickSort is a recursive, divide-and-conquer algorithm to sort a
   sequence. Some of you may have seen this before. One step of
   QuickSort works as follows: given $$n$$ numbers to sort (in
   ascending order, say),
 
-	** pick a _pivot_ at random from one of the $$n$$ elements.
+** pick a _pivot_ at random from one of the $$n$$ elements.
 
-	** all numbers less than the pivot are placed in the left bin, and
-       all numbers greater than the pivot are placed in the right bin
-       (so we do $$n$$ comparisons to partition the numbers into left
-       and right bins).
+** all numbers less than the pivot are placed in the left bin, and all
+   numbers greater than the pivot are placed in the right bin (so we
+   do $$n$$ comparisons to partition the numbers into left and right
+   bins). The two bins may end up being unequal in size.
 
   Then the algorithm is called on each bin separately till we end up
   with bins of size 1. Because we also know the relative order of each
