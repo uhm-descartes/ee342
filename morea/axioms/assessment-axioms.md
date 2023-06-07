@@ -24,22 +24,20 @@ each of them as we come across new topics.
 
 	a. Consider three coin tosses (imagine each coin shows Heads or
 	   Tails). At this stage, can you write the sample space?
-	   Probabilities?
+	   Probabilities? How many distinct events do you have?
   
     b. Suppose the coin tosses are fair and every sequence of coin
        tosses has equal probability. What is the probability
-       assignment for this model? How many distinct events are
-       possible?
+       assignment for this model? 
 
 	c. Instead, suppose the coin tosses are rigged. The person tossing
        the coin ensures that you only see an even number of Heads, but
-       makes sure that all sequences with an even number of Heads
-       (whether 0 or 2 Heads among 3 coin tosses) have equal
-       probabilities. What is the probabilty assignment for this
-       model?
+       makes sure that all sequences with an even number of Heads have
+       equal probabilities (whether 0 or 2 Heads among 3 coin
+       tosses). What is the probabilty assignment for this model?
 
 	d. Under each of the probability models, what is the probability
-       we observe 2 Heads
+       we observe 2 Heads?
 
 2. Consider the following abstract model of a perfect communication
   link. There is a transmitter and a receiver, and the transmitter
@@ -55,8 +53,8 @@ each of them as we come across new topics.
 
 	a. pick a _pivot_ at random from one of the $$n$$ elements.
 
-	b. all numbers less than the pivot are placed in the left bin, and
-       all numbers greater than the pivot are placed in the right bin
+	b. all numbers $$\le$$ the pivot are placed in the left bin, and
+       all numbers $$>$$ than the pivot are placed in the right bin
        (so we do $$n$$ comparisons to partition the numbers into left
        and right bins). The two bins may end up being unequal in size.
 	   
