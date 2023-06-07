@@ -58,19 +58,18 @@ each of them as we come across new topics.
 	b. all numbers less than the pivot are placed in the left bin, and
    all numbers greater than the pivot are placed in the right bin (so
    we do $$n$$ comparisons to partition the numbers into left and
-   right bins). The two bins may end up being unequal in size.
+   right bins). The two bins may end up being unequal in size.  
+   Then the algorithm is called on each bin separately till we end up
+	with bins of size 1. Because we also know the relative order of
+	each bin, writing out all the elements in the order of bins gives
+	the sorted sequence. This is an example of a randomized
+	algorithm. Note that different sequences and different choices of
+	pivots lead to different runtimes. Set up a probability space to
+	model one step of Quicksort for a random permutation of a sequence
+	of 4 distinct numbers. (You can assume without loss of generality
+	that the input is a permutation of 1 through 4, do you see why?)
 
-  Then the algorithm is called on each bin separately till we end up
-  with bins of size 1. Because we also know the relative order of each
-  bin, writing out all the elements in the order of bins gives the
-  sorted sequence. This is an example of a randomized algorithm. Note
-  that different sequences and different choices of pivots lead to
-  different runtimes. Set up a probability space to model one step of
-  Quicksort for a random permutation of a sequence of 4 distinct
-  numbers. (You can assume without loss of generality that the input
-  is a permutation of 1 through 4, do you see why?)
-
-4. AI and Machine learning approaches almost always have a
+4\. AI and Machine learning approaches almost always have a
   probabilistic setup. We consider what is called a classification
   problem. In the real line, imagine that a threshold $$T$$ splits the
   line into two (infinite length) intervals. Each side of $$T$$
