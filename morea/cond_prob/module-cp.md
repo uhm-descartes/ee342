@@ -1,15 +1,16 @@
 ---
-title: "Conditional Probabilities"
+title: "Conditional Probabilities and Independence"
 published: true
 morea_coming_soon: false
 morea_id: module-cp
 morea_prerequisites:
 morea_outcomes:
-  # - outcome-cp
+   - outcome-cp
 morea_readings:
-  # - reading-cp
+   - reading-text-cp
 morea_experiences:
-  # - experience-cp
+  # - experience-profall
+  # - experience simpson
 morea_assessments:
   # - assessment-cp
 morea_type: module
@@ -20,4 +21,4 @@ morea_labels:
 morea_sort_order: 41
 ---
 
-Given partial information (the pic above), is this a cat or a dog?
+Given the pic above, is this a cat or a dog?

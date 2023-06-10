@@ -8,8 +8,6 @@ morea_sort_order: 21
 
   * You understand what sample space, an event and a probability assignment are
   * You can set up the sample space for problems
-  * You can identify simple examples of countable and uncountable sample spaces
-  * You can set up sample spaces for problems
   * You know how to make a probability assignment for a countable sample space
   * You understand that intervals get probabilities in an uncountable
     sample space via integration
