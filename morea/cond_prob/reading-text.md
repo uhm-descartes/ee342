@@ -21,6 +21,16 @@ skip the last subsection of Chapter 1.5 (Independent Trials and
 Binomial Probabilities) for the moment. You will get a chance to 
 review both after the next module.
 
+In Chapter 1.5, Examples 1.22 and 1.23 deserve some comment beyond the
+text. Example 1.22 is an illustration that pairwise independence is
+different from independence, and you can see a different example of
+the same in Problem 1.c worked out in class. Example 1.23 is really
+better appreciated after we learn about independence of random
+variables---$$P(A\cap B\cap C) = P(A)P(B)P(C)$$ alone does not make
+the random variables $${\mathbb 1}_A$$, $${\mathbb 1}_B$$, and
+$${\mathbb 1}_C$$ independent; that it should be so is not at all
+surprising when we learn what makes random variables independent.
+
 ### Partial information and Conditional Probabilities
 One thing to note is that we are making an association, implicitly,
 between probabilities and _information_. This is not a heuristic

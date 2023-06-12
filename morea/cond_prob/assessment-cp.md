@@ -53,27 +53,22 @@ problems in the previous module.
 		b. If $$\epsilon = \frac12$$, show that the received bit is independent of the transmitted bit. In this case of course, the implication is that there is nothing we could do to reconstruct the transmitted bit. 
     
 
-3. _QuickSort_ is a recursive, divide-and-conquer algorithm to sort a
-  sequence. Some of you may have seen this before. Each call to
-  QuickSort works as follows: given $$n$$ numbers to sort (in
-  ascending order, say),
-	a. pick a _pivot_ at random from one of the $$n$$ elements.
-
-	b. all numbers $$\le$$ the pivot are placed in the left bin, and
-       all numbers $$>$$ than the pivot are placed in the right bin
-       (so we do $$n$$ comparisons to partition the numbers into left
-       and right bins). The two bins may end up being unequal in size.
-
-    Then Quicksort is called on each bin separately till we end up
-	with bins of size 1. Because we also know the relative order of
-	each bin, writing out all the elements in the order of bins gives
-	the sorted sequence. This is an example of a randomized
-	algorithm. Note that different sequences and different choices of
-	pivots lead to different runtimes. Set up a probability space to
-	model one step of Quicksort for a random permutation of a sequence
-	of 4 distinct numbers. (You can assume without loss of generality
-	that the input is a permutation of 1 through 4, do you see why?)
-
+3. We set up _QuickSort_ in the last module. Please review the setup.
+    You set up the probability space for a sequence of length 4. In the 
+	first iteration, you would choose a pivot, say $$p_0$$, and break
+	the sequence into two, calling the procedure recursively on each
+	subsequence. 
+	  a. Let $$L_1$$ and $$L_2$$ be the lengths of the two sequences when you split the length 4 sequence. What is the distribution of $$L_1$$? Of $$L_2$$? Is it intuitive that they should have the same distribution?
+	  b. Given $$L_1$$, what is the distribution of $$L_2$$? This anticipates a future topic.
+	  c. When _Quicksort_ is called on the two subsequences of length $$L_1$$ and $$L_2$$, each call produces a new pivot, say $$p_1$$ and $$p_2$$ respectively. Conditioned on any choice of $$p_0$$, the two pivots are chosen independently. But are $$p_0$$ and $$p_1$$ independent? (You can tell whether they are independent without any calculation). 
+	  d. This question anticipates a future topic, but what is the _joint_ distribution of $$p_1$$ and $$p_2$$? We have not formally defined the joint distribution yet, but this problem is given to you so you appreciate the need for one.   
+     We are handcalculating everything for now because we want to
+     understand. But this can easily be programmed. Note that often,
+     all the details (like the distribution of $$p_1$$ and $$p_2$$)
+     are not really that important. If we are interested in running
+     time, we will quickly identify a few summaries to keep track of,
+     such as Expectations of Random Variables.
+		
 4. AI and Machine learning approaches almost always have a
     probabilistic setup. We consider what is called a classification
     problem. In the real line, imagine that a threshold (a number
