@@ -20,12 +20,12 @@ problems in the previous module.
 
 1. Recall the coin toss problem (Problem 1 from the previous module).
 
-    b. Suppose the coin tosses are fair and every sequence of coin
+    1. Suppose the coin tosses are fair and every sequence of coin
        tosses has equal probability. What is the probability the
 	   first coin is heads given the second and third coins have the
 	   same face (ie. the event that they are both heads or both tails)?
 	   
-	c. Instead, suppose the coin tosses are rigged. The person tossing
+	2. Instead, suppose the coin tosses are rigged. The person tossing
        the coin ensures that you only see an even number of Heads, but
        makes sure that all sequences with an even number of Heads have
        equal probabilities (whether 0 or 2 Heads among 3 coin
@@ -33,11 +33,11 @@ problems in the previous module.
 	   first coin is heads given the second and third coins have the
 	   same face (ie. the event that they are both heads or both tails)?
 	   
-    d. Under each of the probability models, show that every pair of
+    3. Under each of the probability models, show that every pair of
 		coin tosses are independent. In the second model, show that the
 		three coin tosses are *not* independent.
 		
-	e. Can you give another probability assignment on the coin tosses such
+	4. Can you give another probability assignment on the coin tosses such
 		that the event: "first coin shows Heads" is independent of 
 		any event you could construct from the second and third coins alone?
 
@@ -47,21 +47,24 @@ problems in the previous module.
     1, but unlike the previous module, now the probability of a 1 is
     $$p$$. Now the link is not perfect. Given any input, the channel
     flips the input bit with probability $$\epsilon$$. This abstraction
-	is called a _Binary Symmetric Channel_. 
-		a. Phrase this channel model in terms of conditional
+	is called a _Binary Symmetric Channel_.
+	
+		1. Phrase this channel model in terms of conditional
     probabilities.
-		b. If $$\epsilon = \frac12$$, show that the received bit is independent of the transmitted bit. In this case of course, the implication is that there is nothing we could do to reconstruct the transmitted bit. 
+
+	    2. If $$\epsilon = \frac12$$, show that the received bit is independent of the transmitted bit. In this case of course, the implication is that there is nothing we could do to reconstruct the transmitted bit. 
     
 
 3. We set up _QuickSort_ in the last module. Please review the setup.
     You set up the probability space for a sequence of length 4. In the 
 	first iteration, you would choose a pivot, say $$p_0$$, and break
 	the sequence into two, calling the procedure recursively on each
-	subsequence. 
-	  a. Let $$L_1$$ and $$L_2$$ be the lengths of the two sequences when you split the length 4 sequence. What is the distribution of $$L_1$$? Of $$L_2$$? Is it intuitive that they should have the same distribution?
-	  b. Given $$L_1$$, what is the distribution of $$L_2$$? This anticipates a future topic.
-	  c. When _Quicksort_ is called on the two subsequences of length $$L_1$$ and $$L_2$$, each call produces a new pivot, say $$p_1$$ and $$p_2$$ respectively. Conditioned on any choice of $$p_0$$, the two pivots are chosen independently. But are $$p_0$$ and $$p_1$$ independent? (You can tell whether they are independent without any calculation). 
-	  d. This question anticipates a future topic, but what is the _joint_ distribution of $$p_1$$ and $$p_2$$? We have not formally defined the joint distribution yet, but this problem is given to you so you appreciate the need for one.   
+	subsequence.
+	
+	   1. Let $$L_1$$ and $$L_2$$ be the lengths of the two sequences when you split the length 4 sequence. What is the distribution of $$L_1$$? Of $$L_2$$? Is it intuitive that they should have the same distribution?
+	   2. Given $$L_1$$, what is the distribution of $$L_2$$? This anticipates a future topic.
+	   3. When _Quicksort_ is called on the two subsequences of length $$L_1$$ and $$L_2$$, each call produces a new pivot, say $$p_1$$ and $$p_2$$ respectively. Conditioned on any choice of $$p_0$$, the two pivots are chosen independently. But are $$p_0$$ and $$p_1$$ independent? (You can tell whether they are independent without any calculation). 
+	   4. This question anticipates a future topic, but what is the _joint_ distribution of $$p_1$$ and $$p_2$$? We have not formally defined the joint distribution yet, but this problem is given to you so you appreciate the need for one.   
      We are handcalculating everything for now because we want to
      understand. But this can easily be programmed. Note that often,
      all the details (like the distribution of $$p_1$$ and $$p_2$$)
