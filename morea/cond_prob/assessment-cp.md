@@ -1,6 +1,6 @@
 ---
 title: "Quizzes and Problems"
-published: false
+published: true
 morea_id: assessment-cp
 morea_summary: "Conditional Probabilities and Independence"
 morea_outcomes_assessed:

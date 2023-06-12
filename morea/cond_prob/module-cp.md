@@ -12,7 +12,7 @@ morea_experiences:
   # - experience-profall
   # - experience simpson
 morea_assessments:
-  # - assessment-cp
+   - assessment-cp
 morea_type: module
 morea_icon_url: /morea/cond_prob/catordog.png
 morea_start_date: "2023-09-04"
