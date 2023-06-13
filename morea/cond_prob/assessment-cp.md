@@ -69,16 +69,16 @@ problems in the previous module.
 	  4. This question anticipates a future topic, but what is the _joint_ distribution of $$p_1$$ and $$p_2$$? We have not formally defined the joint distribution yet, but this problem is given to you so you appreciate the need for one.   
   
   
-  We are handcalculating everything for now because we want to
+    We are handcalculating everything for now because we want to
   understand what is happening, and that forces us to keep the
   sequence length to be small. You could easily simulate everything
   for larger sequence lengths. But a simulation like this tend to be
   overkill, yet doesn't get you the insights you would like. Some
   details (like the distribution of $$p_1$$ and $$p_2$$) are not
   really that important. If we are interested in running time, we will
-  quickly identify a few summaries to keep track of, such as
-  Expectations of Random Variables. And we can hand-calculate these
-  summaries better and faster than any simulation.
+  be able to identify a few summaries to keep track of (we will learn
+  them in Expectations of Random Variables). And we can often hand-calculate
+  or estimate these summaries better and faster than any simulation.
 		
 4. AI and Machine learning approaches almost always have a
     probabilistic setup. We consider what is called a classification
