@@ -70,15 +70,16 @@ problems in the previous module.
   
   
     We are handcalculating everything for now because we want to
-  understand what is happening, and that forces us to keep the
-  sequence length to be small. You could easily simulate everything
-  for larger sequence lengths. But a simulation like this tend to be
-  overkill, yet doesn't get you the insights you would like. Some
+  understand what is happening. So we are keeping the sequence length
+  small. You could easily simulate everything we are doing here for
+  larger sequence lengths. But a simulation like this tends to be
+  overkill, yet may not get you the insights you would like. Some
   details (like the distribution of $$p_1$$ and $$p_2$$) are not
   really that important. If we are interested in running time, we will
   be able to identify a few summaries to keep track of (we will learn
-  them in Expectations of Random Variables). And we can often hand-calculate
-  or estimate these summaries better and faster than any simulation.
+  them in Expectations of Random Variables). We can often
+  hand-calculate or estimate these summaries better and faster than
+  any simulation.
 		
 4. AI and Machine learning approaches almost always have a
     probabilistic setup. We consider what is called a classification
