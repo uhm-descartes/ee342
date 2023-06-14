@@ -35,7 +35,7 @@ full dataset [here](https://discovery.cs.illinois.edu/dataset/berkeley), as well
 | A | 933 | 64% | 825 | 62%| 108 | 82%|
 | B | 585 | 63% | 560 | 63%| 25 | 68%|
 | C | 918 | 35% | 325 | 37%| 593| 34% |
-| Total | 2436 | 1287 | 53% | 1710 | 58% | 726 | 42 %|
+| Total | 2436 | 53% | 1710 | 58% | 726 | 42 %|
 
 When you see the total numbers, (58% acceptance for men, 42% for women), there
 is a strong indication of gender discrimination against women. Yet, split into departments, there isn't such a damning story. In the full UC Berkeley database,
