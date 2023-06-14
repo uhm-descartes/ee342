@@ -9,8 +9,8 @@ morea_outcomes:
 morea_readings:
    - reading-text-cp
 morea_experiences:
-  # - experience-profall
-  # - experience simpson
+   - experience-profall
+   - experience simpson
 morea_assessments:
    - assessment-cp
 morea_type: module
