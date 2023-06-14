@@ -23,12 +23,14 @@ there never was a lawsuit, but it is a striking example nonetheless.
 #### UC Berkeley admissions data
 Here is some data I dug up from Wikipedia:
 
+
 | All applicants| Admitted | Male applicants| Admitted | Female applicants| Admitted |
-|---|---|---|---|----|----|
+|---|---|---|---|---|---|
 | 12763 | 41% | 8442 | 44% | 4321 | 35% |
 
+
 So here, it appears that women were admitted at a lower rate than male applicants. Yet, let us break down the data into individual departments. You can see the
-full dataset [here](https://discovery.cs.illinois.edu/dataset/berkeley), as well as a brief video describing the same. The following is a snapshot of three departments:
+full dataset [here](https://discovery.cs.illinois.edu/dataset/berkeley/), as well as a brief video describing the same. The following is a snapshot of three departments:
 
 | Department | All apps | Admitted | Male apps | Admitted | Female apps | Admitted |
 |---|---|---|---|---|----|----|
