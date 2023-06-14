@@ -16,8 +16,8 @@ morea_assessments:
    - assessment-axioms
 morea_type: module
 morea_icon_url: /morea/axioms/kolmogorov.png
-morea_start_date: "2023-08-28"
-morea_end_date: "2023-09-03"
+morea_start_date: "2023-08-27"
+morea_end_date: "2023-09-02"
 morea_labels:
 morea_sort_order: 21
 ---

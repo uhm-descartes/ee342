@@ -66,11 +66,18 @@ describe $$A_2$$ given $$A_1$$. And so on.
 
 ### $$P(A|Z)$$ and $$P(A|Z^c)$$
 
-Since $$P(\Omega|Z) = 1$$, we have $$P(A|Z)+P(A^c|Z)=1.$$ But what about
-$$P(A|Z)$$ and $$P(A|Z^c)$$? The partial information 
-is different in the two notations---the first indicates that $$Z$$ has
-happened, but the second indicates $$Z$$ has __not__ happened. In general
-they don't add up to anything specific. 
+Conditioned on any event $$Z$$, the conditional probability assignment
+$$P(\cdot|Z)$$ is a valid probability assignment as emphasized in the
+text.  Therefore, we must have $$P(\Omega|Z) = 1$$, and consequently
+$$P(A|Z)+P(A^c|Z)=1.$$ 
 
+But what about $$P(A|Z)$$ and $$P(A|Z^c)$$? The partial information on
+which the conditioning is happening are different in $$P(A|Z)$$ and
+$$P(A|Z^c)$$---the first indicates that $$z$$ has happened, but the
+second indicates $$Z$$ has __not__ happened. In general, conditioning
+on different partial information is like looking at two completely
+different probability assignments. 
+
+So $$P(A|Z)$$ and $$P(A|Z^c)$$ don't add up to anything specific.
 However, the law of total probability (next module) does connect these
 different descriptions.

@@ -4,7 +4,7 @@ published: true
 morea_id: experience-counting
 morea_type: experience
 morea_summary: "Cantor's Diagonalization Argument"
-morea_start_date: "2023-08-28"
+morea_start_date: "2023-08-30"
 morea_labels:
 ---
 

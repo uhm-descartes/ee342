@@ -4,7 +4,7 @@ published: true
 morea_id: experience-cantor
 morea_type: experience
 morea_summary: "Bizzare sets and many sizes of infinity"
-morea_start_date: "2023-07-15T23:00"
+morea_start_date: "2023-08-25"
 morea_labels:
 ---
 

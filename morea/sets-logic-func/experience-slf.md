@@ -4,7 +4,7 @@ published: true
 morea_id: experience-slf
 morea_type: experience
 morea_summary: "A graphic novel"
-morea_start_date: "2023-08-21"
+morea_start_date: "2023-08-23"
 morea_labels:
 ---
 

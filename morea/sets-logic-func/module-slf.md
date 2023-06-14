@@ -16,8 +16,8 @@ morea_assessments:
    - assessment-slf
 morea_type: module
 morea_icon_url: /morea/sets-logic-func/cantor.png
-morea_start_date: "2023-08-21"
-morea_end_date: "2023-08-27"
+morea_start_date: "2023-08-23"
+morea_end_date: "2023-08-26"
 morea_labels:
 morea_sort_order: 11
 ---

@@ -4,7 +4,7 @@ published: true
 morea_id: experience-vitali
 morea_type: experience
 morea_summary: "Does NOT mean zero length"
-morea_start_date: "2023-08-28"
+morea_start_date: "2023-09-01"
 morea_labels:
 ---
 
