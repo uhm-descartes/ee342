@@ -61,12 +61,16 @@ which means the Cantor set $$\cal C$$ has length 0.
 But here is where things get really bizzare. We can easily prove that
 the Cantor set has the same size as [0,1]. It is easy in fact---we say
 $$\cal C$$ has at least the size of $$[0,1]$$ if there is a surjective
-(onto) function $$m:{\cal C}\to [0,1]$$. Namely, every element $$y \in
-[0,1]$$ is the map of some element $$x\in{\cal C}$$ ($$y = m(x)$$),
-though multiple elements in $$\cal C$$ could map to the same $$y\in
-[0,1]$$. There is an obvious map: since the ternary expansion of 
-any $$x\in{\cal C}$$ can be written only in terms of 0s and 2s, let
-us replace every occurance of 2 with a 1. For example if 
+(onto) function $$m:{\cal C}\to [0,1]$$. Since $$m$$ is a function,
+every member of $$\cal C$$ can map to exactly one element of
+$$[0,1]$$. Because it is surjective, every element $$y \in [0,1]$$
+turns out to be the map of some element $$x\in{\cal C}$$ ($$y =
+m(x)$$). This does not preclude multiple elements in $$\cal C$$ 
+mapping to the same $$y\in [0,1]$$.
+
+There is a natural map: since the ternary expansion of any $$x\in{\cal
+C}$$ can be written only in terms of 0s and 2s, let us replace every
+occurance of 2 with a 1. For example if
 
 $$ x = .02220202 $$
 
@@ -74,16 +78,22 @@ then we obtain the sequence
 
 $$ s = .01110101 $$
 
-$$m(x)$$ is the number in $$[0,1]$$ whose _binary_ expansion is $$s$$,
-which we will call as $$y$$. Now every number in $$[0,1]$$ has a
-binary expansion of course, so some element of $$x$$ must map to it
-(potentially more than one if it has multiple
-representations). Therefore the size of $$\cal C$$ is at least as
-large as the size of $$[0,1]$$. But $$\cal C \subset [0,1]$$, so the
-size of $$[0,1]$$ is at least as large as the size of $$\cal C$$. So
-the two sizes must be the same and is called the cardinality of an
-uncountable set (which is a bigger infinity than the size of an
-infinite set such as the set of all natural numbers).
+$$m(x)$$ is the number in $$[0,1]$$ whose _binary_ expansion is $$s$$.
+Therefore, every element $$x\in{\cal C}$$ maps to one infinite binary
+sequence $$s$$, which in turn maps to one number $$y=m(x)\in[0,1]$$.
+Every number in $$[0,1]$$ has at least one binary expansion (there may
+be more than 1, for example .1 = .09999...).
+
+Therefore the size of $$\cal C$$, which equals the size of all
+infinite binary sequences, is at least as large as the size of
+$$[0,1]$$. Conversely, $$\cal C \subset [0,1]$$, so the size of
+$$[0,1]$$ is also at least as large as the size of $$\cal C$$. 
+
+So the two infinite sizes must be the same and the size of this
+infinity is called the cardinality of an uncountable set (which is a
+bigger infinity than the size of the set of all natural numbers). In
+fact the size of $$[0,1]$$ or the Cantor set must equal the size of
+the power set of natural numbers (can you see this?)
 
 
 
