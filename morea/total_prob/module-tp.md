@@ -13,7 +13,7 @@ morea_experiences:
 morea_assessments:
   # - assessment-CHANGE-ME
 morea_type: module
-morea_icon_url: https://imgs.xkcd.com/comics/seashell.png
+morea_icon_url: /morea/total_prob/seashell.png
 morea_start_date: "2023-09-08"
 morea_end_date: "2023-09-12"
 morea_labels:

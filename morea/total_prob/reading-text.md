@@ -3,7 +3,6 @@ title: "Guide for the Text"
 published: true
 morea_id: reading-text-tp
 morea_summary: "Chapter 1.4"
-morea_url: https://github.com/airbnb/javascript
 morea_type: reading
 morea_labels:
 ---
