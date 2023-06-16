@@ -1,14 +1,109 @@
 ---
-title: "CHANGE ME"
-published: false
-morea_id: assessment-CHANGE-ME
-morea_summary: "CHANGE ME"
+title: "Problems in class"
+published: true
+morea_id: assessment-tp-prob
+morea_summary: "Bayes' Theorem"
 morea_outcomes_assessed:
  # - outcome-CHANGE-ME
 morea_type: assessment
-morea_start_date: "2021-07-16T09:00"
+morea_start_date: "2023-09-11"
 morea_labels:
 ---
-# CHANGE ME
+These problems are a Bayesian reformulation of problems from last 
 
-TBD
+1. Recall the coin toss problem (Problem 1 from the previous module). In the previous module, we considered two coins:
+    1. Fair coin: The coin tosses are fair and every sequence of coin
+       tosses has equal probability. What is the probability the
+	   first coin is heads given the second and third coins have the
+	   same face (ie. the event that they are both heads or both tails)?
+	   
+	2. Biased coin: The coin tosses are rigged. The person tossing
+       the coin ensures that you only see an even number of Heads, but
+       makes sure that all sequences with an even number of Heads have
+       equal probabilities (whether 0 or 2 Heads among 3 coin
+       tosses). What is the probability the
+	   first coin is heads given the second and third coins have the
+	   same face (ie. the event that they are both heads or both tails)?  
+   Now let us estimate the following probabilities. In the problems below,
+   assume that the Fair coin is chosen with probability $$p$$ and the Biased
+   coin is chosen with probability $$1-p$$. 
+      1. What is the probability distribution on the three coin tosses (ie, 
+	  you need to compute probabilities of all outcomes, HHH, HHT, etc.)
+	  2. In the prior problem, you noted that any two coin tosses are independent. Is that still true?
+	  3. Are all three coin tosses independent?
+	  4. Given that you saw 2 heads, what is the probability you are seeing coin
+	  tosses from the Fair coin? 
+	  5. Given that you saw 2 heads, what is the probability the next coin toss
+	  is also heads?
+
+2. Recall the Binary Symmetric Channel from the previous module. As
+    before, there is a transmitter and a receiver, and the transmitter
+    transmits one bit through a channel. The transmitter chooses 0 or
+    1, but unlike the previous module, now the probability of a 1 is
+    $$p$$. Now the link is not perfect. Given any input, the channel
+    flips the input bit with probability $$\epsilon$$. 
+		
+	  1. What is the probability the received bit is 1?
+
+	  2. If the received bit is 1, what is the probability that the transmitted bit is 1?
+	  
+
+3. We set up _QuickSort_ in the last module. Please review the setup.
+    You set up the probability space for a sequence of length 4. In the 
+	first iteration, you would choose a pivot, say $$p_0$$, and break
+	the sequence into two, calling the procedure recursively on each
+	subsequence.
+	
+	  1. Let $$L_1$$ and $$L_2$$ be the lengths of the two sequences when you split the length 4 sequence. What is the distribution of $$L_1$$? Of $$L_2$$? Is it intuitive that they should have distributions related that way?
+	   
+	  2. This anticipates a future topic: given $$L_1$$, what is the distribution of $$L_2$$? 
+	   
+	  3. When _Quicksort_ is called on the two subsequences of length $$L_1$$ and $$L_2$$, each call produces a new pivot, say $$p_1$$ and $$p_2$$ respectively. Conditioned on any choice of $$p_0$$, the two pivots are chosen independently. But are $$p_0$$ and $$p_1$$ independent? (You can tell whether they are independent without any calculation).
+	   
+	  4. This question anticipates a future topic, but what is the _joint_ distribution of $$p_1$$ and $$p_2$$? We have not formally defined the joint distribution yet, but this problem helps you appreciate the need for one.   
+  
+  
+    We are handcalculating everything for now because we want to
+  understand what is happening. Consequently, we are keeping the
+  sequence length small. You could easily simulate everything we are
+  doing here for larger sequence lengths. But simulations like this
+  not only tend to be overkill, but also may not reveal much insights,
+  because they carry too much detail (like the distribution of $$p_1$$
+  and $$p_2$$) that are not really that important. If we are
+  interested in running time, we will be able to identify a few
+  summaries to keep track of (we will learn them in Expectations of
+  Random Variables). We can often hand-calculate or estimate these
+  summaries better and faster than any simulation.
+		
+4. AI and Machine learning approaches almost always have a
+    probabilistic setup. We considered a classification problem in the
+    prior module.  where a threshold (a fixed but unknown number
+    $$T$$) splits the line into two (infinite length) intervals, the
+    left side of $$T$$ carrying label -1 and the right side carrying
+    label +1. The threshold $$T$$ is unknown and the learning
+    algorithm is supposed to figure this out.
+	
+	Training points are generated by a pdf $$f$$, which was left
+	unspecified last module, but which we will now specify. To
+	generate a training point from $$f$$, first toss a biased coin
+	whose two sides are $$-1$$ and $$+1$$, and whose probability of landing
+	on $$+1$$ is $$p$$. If the outcome of the coin toss is $$-1$$,
+	we choose a number from $$T-1$$ to $$T$$, using a uniform pdf. If
+	the coin toss is $$+1$$, we choose a number from $$T$$ to $$T+1$$,
+	using a uniform pdf.
+	
+	Our learning algorithm sees a training point $$x$$ and its label.
+	If the label of the training point $$x$$ is -1, the algorithm
+	outputs as its estimate of the threshold to be $$x+1-p$$, If the
+	label of the training point $$x$$ is +1, the algorithm outputs
+	$$x-p$$. The idea is that since the learning algorithm does not
+	know $$T$$, it uses its estimate of the threshold to classify
+	points instead.
+	
+	  a. What is the generalization error (the probability another
+      point generated from $$f$$ is misclassified by the threshold
+      estimated by the learning algorithm) if the label of the
+      training point was $$-1$$? What if the label was $$+1$$?
+	  
+	  b. What is the generalization error? The distinction between this
+	  and the prior quesiton motivates the topics in the next module.

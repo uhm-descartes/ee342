@@ -20,4 +20,4 @@ morea_labels:
 morea_sort_order: 51
 ---
 
-Bayes Theorem in a seashell
+Bayes Theorem in a seashell (Credit: xkcd.com)

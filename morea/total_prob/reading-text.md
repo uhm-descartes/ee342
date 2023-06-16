@@ -19,4 +19,4 @@ Points to pay attention to:
      * probability of a disjoint union is the sum of probabilities of the components of the union: $$P( \cup_i (A_i \cap B) ) = \sum_i P(A_i\cap B)$$ for disjoint $$A_i$$.  
 	 Can you pinpoint all uses in the problems of prior modules? 
 
-* Bayes theorem seems simple as a standalone formula. But it is not just a formula, we are trying to construct a way of thinking here. Pay attention to how this changes the *formulation* of the problems we solve in class. 
+* Bayes theorem seems simple as a standalone formula. But it is not just a formula we are trying to learn, but a way of thinking. Pay attention to how this changes the *formulation* of the problems we solve in class in this module.
