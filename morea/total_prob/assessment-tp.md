@@ -40,12 +40,13 @@ These problems are a Bayesian reformulation of problems from last
     before, there is a transmitter and a receiver, and the transmitter
     transmits one bit through a channel. The transmitter chooses 0 or
     1, but unlike the previous module, now the probability of a 1 is
-    $$p$$. Now the link is not perfect. Given any input, the channel
-    flips the input bit with probability $$\epsilon$$. 
+    $$p$$, this is the _prior_ probability. Now the link is not
+    perfect. Given any input, the channel flips the input bit with
+    probability $$\epsilon$$.
 		
 	  1. What is the probability the received bit is 1?
 
-	  2. If the received bit is 1, what is the probability that the transmitted bit is 1?
+	  2. Given the received bit is 1, what is the probability that the transmitted bit is 1? This is the _posterior_ probability.
 	  
 
 3. We set up _QuickSort_ in the last module. Please review the setup.
