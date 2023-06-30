@@ -11,7 +11,7 @@ morea_readings:
 morea_experiences:
   # - experience-CHANGE-ME
 morea_assessments:
-   - assessment-tp
+   - assessment-bayes
 morea_type: module
 morea_icon_url: /morea/total_prob/seashell.png
 morea_start_date: "2023-09-08"

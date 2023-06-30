@@ -1,7 +1,7 @@
 ---
 title: "Problems in class"
 published: true
-morea_id: assessment-tp-prob
+morea_id: assessment-bayes
 morea_summary: "Bayes' Theorem"
 morea_outcomes_assessed:
  # - outcome-CHANGE-ME
