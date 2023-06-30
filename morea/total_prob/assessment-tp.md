@@ -47,36 +47,80 @@ These problems are a Bayesian reformulation of problems from last
 	  1. What is the probability the received bit is 1?
 
 	  2. Given the received bit is 1, what is the probability that the transmitted bit is 1? This is the _posterior_ probability.
-	  
 
-3. We set up _QuickSort_ in the last module. Please review the setup.
-    You set up the probability space for a sequence of length 4. In the 
-	first iteration, you would choose a pivot, say $$p_0$$, and break
-	the sequence into two, calling the procedure recursively on each
-	subsequence.
-	
-	  1. Let $$L_1$$ and $$L_2$$ be the lengths of the two sequences when you split the length 4 sequence. What is the distribution of $$L_1$$? Of $$L_2$$? Is it intuitive that they should have distributions related that way?
-	   
-	  2. This anticipates a future topic: given $$L_1$$, what is the distribution of $$L_2$$? 
-	   
-	  3. When _Quicksort_ is called on the two subsequences of length $$L_1$$ and $$L_2$$, each call produces a new pivot, say $$p_1$$ and $$p_2$$ respectively. Conditioned on any choice of $$p_0$$, the two pivots are chosen independently. But are $$p_0$$ and $$p_1$$ independent? (You can tell whether they are independent without any calculation).
-	   
-	  4. This question anticipates a future topic, but what is the _joint_ distribution of $$p_1$$ and $$p_2$$? We have not formally defined the joint distribution yet, but this problem helps you appreciate the need for one.   
-  
-  
-    We are handcalculating everything for now because we want to
-  understand what is happening. Consequently, we are keeping the
-  sequence length small. You could easily simulate everything we are
-  doing here for larger sequence lengths. But simulations like this
-  not only tend to be overkill, but also may not reveal much insights,
-  because they carry too much detail (like the distribution of $$p_1$$
-  and $$p_2$$) that are not really that important. If we are
-  interested in running time, we will be able to identify a few
-  summaries to keep track of (we will learn them in Expectations of
-  Random Variables). We can often hand-calculate or estimate these
-  summaries better and faster than any simulation.
-		
-4. AI and Machine learning approaches almost always have a
+3. (Stochastic Block Model) This is an elaborate description of graphs,
+     the Erdos-Renyi random graph model and the Stochastic Block model,
+	 primarily for the reference of those who have not seen anything about
+	 graphs at all. A graph is a collection of _vertices_ $$V$$,
+     and a set $$E \subset V\times V$$ of _edges_. Every element of
+     $$E$$ is an ordered pair $$(v_1, v_2)$$, where $$v_1$$ and
+     $$v_2$$ are vertices. One can interpret this ordered pair as
+     either a line going from $$v_1$$ to $$v_2$$ (denoted by an arrow,
+     and called a directed edge) or a line connecting $$v_1$$ and
+     $$v_2$$ (called an undirected edge). Our notation for the graph
+     will be $$G=(V,E)$$, where $$V$$ is the vertex set, and $$E$$ the
+     set of edges as described above. In this series of problems, we
+     will only consider undirected edges. Graphs that have a random
+     element to their construction are called _random graphs_, and are
+     used extensively to model interactions between entities in a wide
+     variety of areas, including social networks, economics,
+     statistical mechanics, and biological mechanisms.
+    
+	 We will look at a particular kind of random graph generation
+	 called the Erdos-Renyi model. In this model, the vertex set $$V$$
+	 is fixed (and not random), and we also need a fixed number $$0\le
+	 p\le 1$$. Suppose the vertex set has size $$n$$. For each of the
+	 $${n\choose 2}$$ pairs of distinct vertices, the Erdos-Renyi
+	 model tosses a coin (independent of all others) with probability
+	 of heads $$p$$, and if heads, adds that corresponding edge to the
+	 graph. Different coin toss outcomes therefore produce different
+	 graphs, hence the actual graph that is generated is a random
+	 quantity. All coin tosses, again, are assumed independent. A random
+	 graph generated with this Erdos Renyi model on a vertex set of
+	 size $$n$$ and parameter $$p$$ is denoted $$G(n,p)$$.
+
+	 A Stochastic Block Model is a clustering model. Here we assume
+	 that there are two clusters of related entities (for example,
+	 senators of the same party, genomes of related species, etc.).
+	 Each entity is represented by a node. The entities are related,
+	 but not identical. We make an observation (say we sequence a part
+	 of the genome of all bacteria in a patient's gut). Related
+	 entities may behave similarly, but every pair of related entities
+	 will not necessarily behave identically. So for example, portions
+	 of the sequenced genome for different bacteria of the same
+	 species may have some degree of similarity, but they will not be
+	 identical. Unrelated entities may also show some similarity, but
+	 to a lesser degree---namely, different species bacteria may show
+	 some similarity in the portion of the genome sequenced (not too
+	 surprising, humans share 90+% of the genome with chimps). Now
+	 given the observation, can we infer which nodes belong to which
+	 clusters? Which bacteria form different species in our observation?
+	 
+	 To model this, suppose there are $$2n$$ vertices, two clusters,
+     with $$n$$ vertices in each cluster. Which nodes belong to which
+     clusters is unknown to us, and must be infered from an
+     experiment. Say we perform an experiment, and draw edges between
+     nodes where the experiment indicates similarity (perhaps
+     similarity greater than a threshold in our genome inference
+     example). How do we infer cluster membership? 
+	 
+	 A common modeling approach is probabilistic, where we assume each
+     cluster is a random realization of an Erdos-Renyi $$G(n,p)$$
+     graph. Just like the Erdos-Renyi setup, we now place edges
+     between two vertices in different clusters using independent coin
+     flips, this time with bias $$q < p$$. Thus we expect vertices in
+     the same cluster to be more tightly connected than with vertices
+     in other clusters. The "random" edges placed is a probabilistic
+     modeling technique to account for the fact that experiments do not
+	 always reveal similarity or dissimilarity. This model is the
+	 Stochastic Block Model. We will use this in later modules as well,
+	 but two preliminary questions for now:
+	 
+	 1. Given two randomly chosen vertices $$v$$ and $$w$$, what is	the probability that there is an edge between them?
+	 
+	 2. Given that two vertices $$v$$ and $$w$$ have an edge between them, what is the probability they belong to the same cluster?
+	 
+3. AI and Machine learning approaches almost always have a
     probabilistic setup. We considered a classification problem in the
     prior module.  where a threshold (a fixed but unknown number
     $$T$$) splits the line into two (infinite length) intervals, the
