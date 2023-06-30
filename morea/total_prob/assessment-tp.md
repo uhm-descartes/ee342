@@ -11,7 +11,7 @@ morea_labels:
 ---
 These problems are a Bayesian reformulation of problems from last 
 
-1. Recall the coin toss problem (Problem 1 from the previous module). In the previous module, we considered two coins:
+1. **Coin Tosses** Recall the coin toss problem (Problem 1 from the previous module). In the previous module, we considered two coins:
     1. Fair coin: The coin tosses are fair and every sequence of coin
        tosses has equal probability. What is the probability the
 	   first coin is heads given the second and third coins have the
@@ -36,7 +36,7 @@ These problems are a Bayesian reformulation of problems from last
 	  5. Given that you saw 2 heads, what is the probability the next coin toss
 	  is also heads?
 
-2. Recall the Binary Symmetric Channel from the previous module. As
+2. **Communication over noisy channels** Recall the Binary Symmetric Channel from the previous module. As
     before, there is a transmitter and a receiver, and the transmitter
     transmits one bit through a channel. The transmitter chooses 0 or
     1, but unlike the previous module, now the probability of a 1 is
@@ -48,7 +48,7 @@ These problems are a Bayesian reformulation of problems from last
 
 	  2. Given the received bit is 1, what is the probability that the transmitted bit is 1? This is the _posterior_ probability.
 
-3. (Stochastic Block Model) This is an elaborate description of graphs,
+3. **Stochastic Block Model** This is an elaborate description of graphs,
      the Erdos-Renyi random graph model and the Stochastic Block model,
 	 primarily for the reference of those who have not seen anything about
 	 graphs at all. A graph is a collection of _vertices_ $$V$$,
@@ -111,17 +111,17 @@ These problems are a Bayesian reformulation of problems from last
      flips, this time with bias $$q < p$$. Thus we expect vertices in
      the same cluster to be more tightly connected than with vertices
      in other clusters. The "random" edges placed is a probabilistic
-     modeling technique to account for the fact that experiments do not
-	 always reveal similarity or dissimilarity. This model is the
-	 Stochastic Block Model. We will use this in later modules as well,
-	 but two preliminary questions for now:
+     modeling technique to account for the fact that experiments do
+     not always reveal similarity or dissimilarity with
+     certainity. This model is the Stochastic Block Model. We will use
+     this in later modules as well, but two preliminary questions for
+     now:
 	 
-	 1. Given two randomly chosen vertices $$v$$ and $$w$$, what is	the probability that there is an edge between them?
+	 1. Given two randomly chosen vertices $$v$$ and $$w$$ among the $$2n$$ vertices, what is	the probability that there is an edge between them?
 	 
 	 2. Given that two vertices $$v$$ and $$w$$ have an edge between them, what is the probability they belong to the same cluster?
 	 
-3. AI and Machine learning approaches almost always have a
-    probabilistic setup. We considered a classification problem in the
+3. **Classification** We considered a classification problem in the
     prior module.  where a threshold (a fixed but unknown number
     $$T$$) splits the line into two (infinite length) intervals, the
     left side of $$T$$ carrying label -1 and the right side carrying
