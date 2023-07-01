@@ -9,7 +9,7 @@ morea_type: assessment
 morea_start_date: "2023-09-11"
 morea_labels:
 ---
-These problems are a Bayesian reformulation of problems from last 
+These problems are a Bayesian reformulation of problems from previous modules.
 
 1. **Coin Tosses** Recall the coin toss problem (Problem 1 from the previous module). In the previous module, we considered two coins:
     * Fair coin: The coin tosses are fair and every sequence of coin
