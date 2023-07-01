@@ -24,6 +24,7 @@ These problems are a Bayesian reformulation of problems from last
        tosses). What is the probability the
 	   first coin is heads given the second and third coins have the
 	   same face (ie. the event that they are both heads or both tails)?  
+
    Now let us estimate the following probabilities. In the problems below,
    assume that the Fair coin is chosen with probability $$p$$ and the Biased
    coin is chosen with probability $$1-p$$. 
