@@ -12,12 +12,12 @@ morea_labels:
 These problems are a Bayesian reformulation of problems from last 
 
 1. **Coin Tosses** Recall the coin toss problem (Problem 1 from the previous module). In the previous module, we considered two coins:
-    1. Fair coin: The coin tosses are fair and every sequence of coin
+    * Fair coin: The coin tosses are fair and every sequence of coin
        tosses has equal probability. What is the probability the
 	   first coin is heads given the second and third coins have the
 	   same face (ie. the event that they are both heads or both tails)?
 	   
-	2. Biased coin: The coin tosses are rigged. The person tossing
+	* Biased coin: The coin tosses are rigged. The person tossing
        the coin ensures that you only see an even number of Heads, but
        makes sure that all sequences with an even number of Heads have
        equal probabilities (whether 0 or 2 Heads among 3 coin
@@ -27,13 +27,13 @@ These problems are a Bayesian reformulation of problems from last
    Now let us estimate the following probabilities. In the problems below,
    assume that the Fair coin is chosen with probability $$p$$ and the Biased
    coin is chosen with probability $$1-p$$. 
-      1. What is the probability distribution on the three coin tosses (ie, 
+      * What is the probability distribution on the three coin tosses (ie, 
 	  you need to compute probabilities of all outcomes, HHH, HHT, etc.)
-	  2. In the prior problem, you noted that any two coin tosses are independent. Is that still true?
-	  3. Are all three coin tosses independent?
-	  4. Given that you saw 2 heads, what is the probability you are seeing coin
+	  * In the prior problem, you noted that any two coin tosses are independent. Is that still true?
+	  * Are all three coin tosses independent?
+	  * Given that you saw 2 heads, what is the probability you are seeing coin
 	  tosses from the Fair coin? 
-	  5. Given that you saw 2 heads, what is the probability the next coin toss
+	  * Given that you saw 2 heads, what is the probability the next coin toss
 	  is also heads?
 
 2. **Communication over noisy channels** Recall the Binary Symmetric Channel from the previous module. As
@@ -44,9 +44,9 @@ These problems are a Bayesian reformulation of problems from last
     perfect. Given any input, the channel flips the input bit with
     probability $$\epsilon$$.
 		
-	  1. What is the probability the received bit is 1?
+	  * What is the probability the received bit is 1?
 
-	  2. Given the received bit is 1, what is the probability that the transmitted bit is 1? This is the _posterior_ probability.
+	  * Given the received bit is 1, what is the probability that the transmitted bit is 1? This is the _posterior_ probability.
 
 3. **Stochastic Block Model** This is an elaborate description of graphs,
      the Erdos-Renyi random graph model and the Stochastic Block model,
@@ -117,9 +117,9 @@ These problems are a Bayesian reformulation of problems from last
      this in later modules as well, but two preliminary questions for
      now:
 	 
-	 1. Given two randomly chosen vertices $$v$$ and $$w$$ among the $$2n$$ vertices, what is	the probability that there is an edge between them?
+	 * Given two randomly chosen vertices $$v$$ and $$w$$ among the $$2n$$ vertices, what is	the probability that there is an edge between them?
 	 
-	 2. Given that two vertices $$v$$ and $$w$$ have an edge between them, what is the probability they belong to the same cluster?
+	 * Given that two vertices $$v$$ and $$w$$ have an edge between them, what is the probability they belong to the same cluster?
 	 
 3. **Classification** We considered a classification problem in the
     prior module.  where a threshold (a fixed but unknown number
@@ -145,10 +145,10 @@ These problems are a Bayesian reformulation of problems from last
 	know $$T$$, it uses its estimate of the threshold to classify
 	points instead.
 	
-	  a. What is the generalization error (the probability another
+	  * What is the generalization error (the probability another
       point generated from $$f$$ is misclassified by the threshold
       estimated by the learning algorithm) if the label of the
       training point was $$-1$$? What if the label was $$+1$$?
 	  
-	  b. What is the generalization error? The distinction between this
+	  * What is the generalization error? The distinction between this
 	  and the prior quesiton motivates the topics in the next module.
