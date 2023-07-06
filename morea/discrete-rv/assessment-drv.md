@@ -98,8 +98,10 @@ we can wade in a little deeper.
    choices could lead to different values of $$M$$. But what we show
    is that the average value of $$M$$ is $${\mathcal O}(n\log n)$$,
    far smaller than the worst case value of $$n(n-1)/2$$ (where every
-   pair of elements are compared). We haven't fully understood the
-   ramifications of the expectation, but we will pick up this thread
-   in later chapters.
+   pair of elements are compared). But of course, as we discussed in class,
+   the concentration of $$M$$ around $${\mathbb E}M$$ is not known, so
+   we don't immediately know if this is a really good algorithm that 
+   uses $$n\log n$$ comparisons most of the time or not.
+   
 
 
