@@ -54,13 +54,39 @@ we can wade in a little deeper.
    the probability space we wrote for this problem.
    
    We will adopt the following notation: for $$1\le i\le n$$, we will
-   denote by $$i$$, the $$i'$$th smallest element in the list. We may
+   denote by $$e_i$$, the $$i'$$th smallest element in the list. We may
    not know as soon as we see a sequence which element it is, but it
    is one of the elements in the list. 
    
-   We want to know the probability that element $$i$$ and $$j$$ are
-   compared. 
+   We want to know the probability that element $$e_i$$ and $$e_j$$
+   are compared. To get this probability, we make the following
+   observation: let $$S = \{ e_i, e_{i+1}, \ldots, e_{j-1},
+   e_j\}$$. In the beginning, all elements of $$S$$ are in the same
+   group (all $$n$$ elements are).  As long as no element of $$S$$ is
+   chosen as the pivot, all elements of $$S$$ continue to be in the
+   same group (and no element of $$S$$ is compared with any other
+   element of $$S$$). The set $$S$$ gets split into two groups the
+   moment an element of $$S$$ gets chosen as the
+   pivot. And if so, during the split, $$e_i$$ and $$e_j$$ are
+   compared directly only if one of $$e_i$$ or $$e_j$$ is chosen
+   as the pivot. If not, $$e_i$$ and $$e_j$$ are never compared 
+   directly. 
    
+   * What is the probability that in the step that $$S$$ is split, the
+	 pivot is either $$e_i$$ or $$e_j$$? This is also the probability that
+	 $$e_i$$ and $$e_j$$ are compared directly in any step of the Quicksort
+	 algorithm. 
+   * Let $$I(i,j)$$ be the indicator for whether $$e_i$$ and $$e_j$$ are ever
+	 directly compared in the entire run of the Quicksort algorithm. What
+	 is $${\mathbb E} I(i,j)$$?
+	 
+   Believe it or not, we now know the average running time of the Quicksort
+   Algorithm. Let
+   
+   $$M= \sum_{1\le i\le n} \sum_{1\le j\le n} I(i,j)$$
+   
+    * What is a good interpretation for $$M$$?
+	* What is $${\mathbb E} M$$?
    
 
 
