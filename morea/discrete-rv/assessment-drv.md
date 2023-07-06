@@ -81,14 +81,14 @@ we can wade in a little deeper.
 	 the elements of $$S$$, the pivot is either $$e_i$$ or $$e_j$$?
 	 This is also the probability that $$e_i$$ and $$e_j$$ are
 	 compared directly in any step of the Quicksort algorithm.
-   * Let $$I(i,j)$$ be the indicator for whether $$e_i$$ and $$e_j$$ are ever
+   * Let $$X_{ij}$$ be the indicator for whether $$e_i$$ and $$e_j$$ are ever
 	 directly compared in the entire run of the Quicksort algorithm. What
-	 is $${\mathbb E} I(i,j)$$?
+	 is $${\mathbb E} X_{ij}$$?
 	 
    Believe it or not, we now know the average running time of the Quicksort
    Algorithm. Let
    
-   $$M= \sum_{1\le i\le n} \sum_{ i \le j\le n} I(i,j)$$
+   $$M= \sum_{1\le i\le n} \sum_{ i \le j\le n} X_{ij}$$
    
     * What is a good interpretation for $$M$$?
 	* What is $${\mathbb E} M$$?
@@ -98,10 +98,18 @@ we can wade in a little deeper.
    choices could lead to different values of $$M$$. But what we show
    is that the average value of $$M$$ is $${\mathcal O}(n\log n)$$,
    far smaller than the worst case value of $$n(n-1)/2$$ (where every
-   pair of elements are compared). But of course, as we discussed in class,
-   the concentration of $$M$$ around $${\mathbb E}M$$ is not known, so
-   we don't immediately know if this is a really good algorithm that 
-   uses $$n\log n$$ comparisons most of the time or not.
+   pair of elements are compared). 
+   
+   While $$X_{ij}$$ are binary valued variables, like in the second
+   part of the previous problem, we do not know anything about their
+   dependence.  Typically, to compute averages, these dependences are
+   unnecessary.  But of course, as we discussed in class, the
+   concentration of $$M$$ around $${\mathbb E}M$$ is not known, so we
+   don't immediately know if this is a really good algorithm that uses
+   $$n\log n$$ comparisons most of the time or not. To get a picture of
+   the concentration around the expectation, we need to unravel a little
+   bit about the dependencies between the random variables $$X_{ij}$$ 
+   for different values of $$i,j$$. We will do this in future modules.
    
 
 
