@@ -29,7 +29,8 @@ we can wade in a little deeper.
       variable. What would be a good interpretation for this random
       variable?
 	 * What is $${\mathbb E} N$$?  
-     Now we have a very similar looking problem, but we will only
+     
+	 Now we have a very similar looking problem, but we will only
 	 specify the probability space partially. Specifying models
 	 partially is quite realistic---in many applications, we cannot
 	 truly get the full picture, but we still need to know what we can
@@ -45,7 +46,8 @@ we can wade in a little deeper.
       that the $$i$$'th coin toss is heads.  What is $${\mathbb E}
       X_i$$?
 	  * Let $$N= X_1+ X_2 +\ldots + X_n$$. What is $${\mathbb E} N$$?  
-     Notice how we can answer the above questions even though we don't
+     
+	 Notice how we can answer the above questions even though we don't
 	 have the full probability model.
     
 2. Let us go back to Quicksort from prior modules. In this episode, we
@@ -70,12 +72,12 @@ we can wade in a little deeper.
    pivot. And if so, during the split, $$e_i$$ and $$e_j$$ are
    compared directly only if one of $$e_i$$ or $$e_j$$ is chosen
    as the pivot. If not, $$e_i$$ and $$e_j$$ are never compared 
-   directly. 
+   directly in any future step (since they will now be in different groups).
    
-   * What is the probability that in the step that $$S$$ is split, the
-	 pivot is either $$e_i$$ or $$e_j$$? This is also the probability that
-	 $$e_i$$ and $$e_j$$ are compared directly in any step of the Quicksort
-	 algorithm. 
+   * What is the probability that, given that a pivot is chosen among
+	 the elements of $$S$$, the pivot is either $$e_i$$ or $$e_j$$?
+	 This is also the probability that $$e_i$$ and $$e_j$$ are
+	 compared directly in any step of the Quicksort algorithm.
    * Let $$I(i,j)$$ be the indicator for whether $$e_i$$ and $$e_j$$ are ever
 	 directly compared in the entire run of the Quicksort algorithm. What
 	 is $${\mathbb E} I(i,j)$$?
