@@ -30,7 +30,7 @@ we can wade in a little deeper.
       variable?
 	 * What is $${\mathbb E} N$$?  
      
-	 Now we have a very similar looking problem, but we will only
+	 Now we will pose a very similar looking problem, but we will only
 	 specify the probability space partially. Specifying models
 	 partially is quite realistic---in many applications, we cannot
 	 truly get the full picture, but we still need to know what we can
@@ -40,8 +40,8 @@ we can wade in a little deeper.
 	 probability model, specifically, how the different coin tosses
 	 depend on each other.
       * Can you come up with a probability model on the $$n$$ coin
-	 tosses different from the independent coin flips of the previous
-	 parts?
+	 tosses, but something different from the independent coin flips of
+	 the previous part?
 	  * Once again, for $$1\le i\le n$$, let $$X_i$$ be the indicator
       that the $$i$$'th coin toss is heads.  What is $${\mathbb E}
       X_i$$?
@@ -50,10 +50,13 @@ we can wade in a little deeper.
 	 Notice how we can answer the above questions even though we don't
 	 have the full probability model.
     
-2. Let us go back to Quicksort from prior modules. In this episode, we
-   will see the probability any two elements are directly compared (in
-   any step) of the Quicksort algorithm run on $$n$$ elements. Recall
-   the probability space we wrote for this problem.
+2. **Quicksort** Let us go back to Quicksort from prior modules. In
+   this episode, we will see the probability any two elements are
+   directly compared (in any step) of the Quicksort algorithm run on
+   $$n$$ elements, and thereby compute the average number of
+   comparisons required for any sequence. Recall the probability space
+   we wrote for this problem, but assume that the starting sequence is
+   fixed. Equivalently, we are conditioning on the starting sequence.
    
    We will adopt the following notation: for $$1\le i\le n$$, we will
    denote by $$e_i$$, the $$i'$$th smallest element in the list. We may
@@ -85,10 +88,18 @@ we can wade in a little deeper.
    Believe it or not, we now know the average running time of the Quicksort
    Algorithm. Let
    
-   $$M= \sum_{1\le i\le n} \sum_{1\le j\le n} I(i,j)$$
+   $$M= \sum_{1\le i\le n} \sum_{ i \le j\le n} I(i,j)$$
    
     * What is a good interpretation for $$M$$?
 	* What is $${\mathbb E} M$$?
    
+   And there you go! You have done the first grown-up analysis. $$M$$
+   is random, and depends on the choice of pivots. Different random
+   choices could lead to different values of $$M$$. But what we show
+   is that the average value of $$M$$ is $${\mathcal O}(n\log n)$$,
+   far smaller than the worst case value of $$n(n-1)/2$$ (where every
+   pair of elements are compared). We haven't fully understood the
+   ramifications of the expectation, but we will pick up this thread
+   in later chapters.
 
 
