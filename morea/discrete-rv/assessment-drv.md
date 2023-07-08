@@ -35,7 +35,7 @@ we can wade in a little deeper.
 	 partially is quite realistic---in many applications, we cannot
 	 truly get the full picture, but we still need to know what we can
 	 infer from the partial model. For the following parts, we still
-	 have a sequence of $$n$$ toss outcomes, and each toss has
+	 have a sequence of $$n$$ toss outcomes, and each toss outcome has
 	 probability $$p$$ of being heads. But I do not tell you
 	 anything more about the probability model, specifically, how the
 	 different tosses depend on each other.
