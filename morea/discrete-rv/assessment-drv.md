@@ -24,28 +24,29 @@ we can wade in a little deeper.
 	 * For $$1\le i\le n$$, let $$X_i$$ be the indicator that the
       $$i$$'th coin toss is heads. Note the explanation of indicator
       from class, this will be very commonly reused. What is
-      $${\mathbb E} X_i$$?
+      $${\mathbb E} [X_i]$$?
 	 * Let $$N= X_1+ X_2 +\ldots + X_n$$. $$N$$ is now another random
       variable. What would be a good interpretation for this random
       variable?
-	 * What is $${\mathbb E} N$$?  
+	 * What is $${\mathbb E}[ N] $$?  
      
 	 Now we will pose a very similar looking problem, but we will only
 	 specify the probability space partially. Specifying models
 	 partially is quite realistic---in many applications, we cannot
 	 truly get the full picture, but we still need to know what we can
 	 infer from the partial model. For the following parts, we still
-	 have $$n$$ coin tosses, each coin have a probability $$p$$ of
-	 showing heads. But I do not tell you anything more about the
-	 probability model, specifically, how the different coin tosses
-	 depend on each other.
-      * Can you come up with a probability model on the $$n$$ coin
-	 tosses, but something different from the independent coin flips of
-	 the previous part?
+	 have a sequence of $$n$$ toss outcomes, and each toss has
+	 probability $$p$$ of being heads. But I do not tell you
+	 anything more about the probability model, specifically, how the
+	 different tosses depend on each other.
+      * Can you come up with a probability model on the $$n$$ outcomes
+	 (of course, consistent with the fact that each toss has
+	 probability $$p$$ of being heads), but something different from
+	 the independent coin flips of the previous part?
 	  * Once again, for $$1\le i\le n$$, let $$X_i$$ be the indicator
-      that the $$i$$'th coin toss is heads.  What is $${\mathbb E}
-      X_i$$?
-	  * Let $$N= X_1+ X_2 +\ldots + X_n$$. What is $${\mathbb E} N$$?  
+      that the $$i$$'th toss is heads.  What is $${\mathbb E}
+      [X_i]$$?
+	  * Let $$N= X_1+ X_2 +\ldots + X_n$$. What is $${\mathbb E} [N]$$?  
      
 	 Notice how we can answer the above questions even though we don't
 	 have the full probability model.
@@ -83,7 +84,7 @@ we can wade in a little deeper.
 	 compared directly in any step of the Quicksort algorithm.
    * Let $$X_{ij}$$ be the indicator for whether $$e_i$$ and $$e_j$$ are ever
 	 directly compared in the entire run of the Quicksort algorithm. What
-	 is $${\mathbb E} X_{ij}$$?
+	 is $${\mathbb E} [X_{ij}]$$?
 	 
    Believe it or not, we now know the average running time of the Quicksort
    Algorithm. Let
@@ -91,7 +92,7 @@ we can wade in a little deeper.
    $$M= \sum_{1\le i\le n} \sum_{ i \le j\le n} X_{ij}$$
    
     * What is a good interpretation for $$M$$?
-	* What is $${\mathbb E} M$$?
+	* What is $${\mathbb E} [M]$$?
    
    And there you go! You have done the first grown-up analysis. $$M$$
    is random, and depends on the choice of pivots. Different random
