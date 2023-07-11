@@ -9,7 +9,7 @@ morea_outcomes:
 morea_readings:
   # - reading-text-rv
 morea_experiences:
-  # - experience-CHANGE-ME
+   - experience-measurable
 morea_assessments:
    - assessment-rv
 morea_type: module
