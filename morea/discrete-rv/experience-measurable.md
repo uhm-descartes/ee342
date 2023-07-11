@@ -8,18 +8,20 @@ morea_start_date: "2023-09-16"
 morea_labels:
 ---
 
-Let $$(\Omega, {\mathcal F}, \prob)$$ be a probability space, with
+Let $$(\Omega, {\mathcal F}, {\mathbb P})$$ be a probability space, with
 $${\mathcal F}$$ being the set of all events possible. Recall that the
 technical term for $${\mathcal F}$$ is a sigma-algebra, and it is a
 set of subsets of $$\Omega$$ that includes $$\Omega$$, and is closed
 under complementation and countable unions (and therefore also
 countable intersections).
 
-We defined a random variable as a function from $$\Omega\to{\mathbb R}$$.
-Of course, this definition hides some nuances. Just like not all
-subsets of $$\Omega$$ are allowed to be events if we are to keep the
-axioms of probability, not all functions from $$\Omega\to{\mathbb R}$$ can
-be random variables. 
+In class, we said that a random variable is a function from
+$$\Omega\to{\mathbb R}$$.  This is true, all random variables indeed
+are functions from $$\Omega\to {\mathbb R}$$. But not all functions
+from $$\Omega\to {\mathbb R}$$ are random variables, just like not all
+subsets of $$\Omega$$ are allowed to be events, if we are to assign
+probabilities to events of form $$X \le a$$, and so on. 
+
 
 ### Borel Sigma-Algebra
 
@@ -27,7 +29,7 @@ Recall that $${\mathbb R}$$, the set of all real numbers is
 uncountable. Therefore, if were to define a probability space on
 $${\mathbb R}$$, not every subset of $${\mathbb R}$$ can be an event. So we
 first specify which subsets of $${\mathbb R}$$ we really want to be
-events---and those are intervals of form $$[a,b]$$, $$(a,b]$$,
+events---and those are simple intervals of form $$[a,b]$$, $$(a,b]$$,
 $$[a,b)$$ and $$(a,b)$$ for all values of $$a$$ and $$b$$ ($$-\infty$$
 and $$\infty$$ allowed).
 
@@ -56,19 +58,19 @@ simply a mnemonic to remind ourselves that these are the elements of
 $$\Omega$$ that map into $$A$$. In any case, $$X^{-1}(A)$$ is a subset
 of $$\Omega$$.
 
-We define a function $$X:\Omega\to {\mathbb R}$$ to be measurable if for
-all $$B\in {\mathcal B}$, $$X^{-1}(B) \in {\mathcal F}$$. 
+A function $$X:\Omega\to {\mathbb R}$$ is defined to be *measurable*
+if for all $$B\in {\mathcal B}$$, we have $$X^{-1}(B) \in {\mathcal
+F}$$.
 
 Essentially this means that any event in the Borel Sigma-algebra naturally
 gets a probability under the mapping $$X$$, using the probability 
-space $$(\Omega, {\mathcal F}, \prob)$$. To do so, for any event $$B\in {\mathcal B}$$, we
+space $$(\Omega, {\mathcal F}, {\mathbb P})$$. To do so, for any event $$B\in {\mathcal B}$$, we
 simply identify $$X^{-1}(B)$$ and because of measurability, we are assured
-that $$X^{-1}(B)\in{\mathcal F}$$. Now $$\prob$$ has assigned every element in $${\mathcal F}$$
+that $$X^{-1}(B)\in{\mathcal F}$$. Now $${\mathbb P}$$ has assigned every element in $${\mathcal F}$$
 a probability, and therefore $$X^{-1}(B)$$ in particular, and that is the
 probability we assign for $$X \in B$$. 
 
-If $$X$$ is not measurable, it means there may be a set $$B\in {\mathcal B}$ such
-that $$X^{-1}(B)\notin {\mathcal F}$$, and therefore cannot be assigned a probability.
+If $$X$$ is not measurable, it means there may be a set $$B\in {\mathcal B}$$ such that $$X^{-1}(B)\notin {\mathcal F}$$, and therefore cannot be assigned a probability.
 This means that the regular things we do with manipulation of real numbers,
 countable unions and complements will break. 
 
