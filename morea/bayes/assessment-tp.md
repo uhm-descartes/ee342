@@ -11,31 +11,38 @@ morea_labels:
 ---
 These problems are a Bayesian reformulation of problems from previous modules.
 
-1. **Coin Tosses** Recall the coin toss problem (Problem 1 from the previous module). In the previous module, we considered two coins:
+1. **Coin Tosses** Recall the 3-coin toss problem (Problem 1 from
+   previous modules). In the Conditional Probability module, we
+   considered two scenarios:
     * Fair coin: The coin tosses are fair and every sequence of coin
        tosses has equal probability. What is the probability the
 	   first coin is heads given the second and third coins have the
 	   same face (ie. the event that they are both heads or both tails)?
 	   
-	* Biased coin: The coin tosses are rigged. The person tossing
-       the coin ensures that you only see an even number of Heads, but
-       makes sure that all sequences with an even number of Heads have
-       equal probabilities (whether 0 or 2 Heads among 3 coin
-       tosses). What is the probability the
-	   first coin is heads given the second and third coins have the
-	   same face (ie. the event that they are both heads or both tails)?  
+	* Zero-parity coin: The coin is special, and if you toss the coin
+       thrice, you are guaranteed to see only an even number of
+       Heads. All such sequences of tosses with an even number of
+       Heads have equal probabilities (whether the sequence of coin
+       tosses has 0 or 2 Heads among 3 coin tosses). What is the
+       probability the first toss is heads given the second and third
+       tosses come up the same face (ie. the event that they are both heads or both tails)?  
 
-   Now let us estimate the following probabilities. In the problems below,
-   assume that the Fair coin is chosen with probability $$p$$ and the Biased
-   coin is chosen with probability $$1-p$$. 
-      * What is the probability distribution on the three coin tosses (ie, 
-	  you need to compute probabilities of all outcomes, HHH, HHT, etc.)
-	  * In the prior problem, you noted that any two coin tosses are independent. Is that still true?
-	  * Are all three coin tosses independent?
-	  * Given that you saw 2 heads, what is the probability you are seeing coin
-	  tosses from the Fair coin? 
-	  * Given that you saw 2 heads, what is the probability the next coin toss
-	  is also heads?
+   Now let us look at the following Composite scenario in the problems
+   below. Assume that the Fair coin is chosen with prior probability
+   $$w$$ and the Zero-Parity coin is chosen with probability
+   $$1-p$$. Following the choice of the coin, it is tossed thrice.
+      * What is the probability law on the outcome of coin tosses in
+		the Composite scenario (ie, you need to compute probabilities
+		of all outcomes, HHH, HHT, etc.)
+	  * In a previous problem, you noted that any two tosses are
+        independent in both the Fair/Zero-parity coins. Are any two
+        two coin tosses still independent in the Composite scenario?
+	  * Are all three coin tosses independent in the Composite scenario?
+	  * Given that you see 2 heads among the 3 coin tosses in the
+        Composite scenario, what is the probability you are seeing
+        tosses from the Fair coin?
+	  * Given that you saw 2 heads among 3 tosses in the Composite
+        scenario, what is the probability the next toss is also heads?
 
 2. **Communication over noisy channels** Recall the Binary Symmetric Channel from the previous module. As
     before, there is a transmitter and a receiver, and the transmitter

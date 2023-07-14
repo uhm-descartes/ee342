@@ -18,28 +18,29 @@ Please submit on Laulima as instructed
 The four problems here are a developed from the corresponding
 problems in the previous module. 
 
-1. Recall the coin toss problem (Problem 1 from the previous module).
+1. Recall the 3-coin toss problem (Problem 1 from the previous module).
 
-    1. Suppose the coin tosses are fair and every sequence of coin
-       tosses has equal probability. What is the probability the
-	   first coin is heads given the second and third coins have the
-	   same face (ie. the event that they are both heads or both tails)?
+    1. Fair Coin: Suppose every sequence of coin tosses has equal
+       probability. Show that each coin toss has probability $$1/2$$
+       of being heads. What is the probability the first toss is heads
+       given the second and third tosses have the same face (ie. the
+       event that they are both heads or both tails)?
 	   
-	2. Instead, suppose the coin tosses are rigged. The person tossing
-       the coin ensures that you only see an even number of Heads, but
-       makes sure that all sequences with an even number of Heads have
-       equal probabilities (whether 0 or 2 Heads among 3 coin
-       tosses). What is the probability the
-	   first coin is heads given the second and third coins have the
-	   same face (ie. the event that they are both heads or both tails)?
+	2. Zero-parity coin: This is a special coin such that if you toss
+       it thrice, you are guaranteed to see only an even number of
+       Heads.  However, all sequences with an even number of Heads
+       have equal probability (regardless of whether the sequence has
+       0 or 2 Heads among 3 coin tosses). What is the probability the
+       first toss is heads given the second and third tosses have the
+       same face (ie. the event that they are both heads or both
+       tails)?
 	   
-    3. Under each of the probability models, show that every pair of
-		coin tosses are independent. In the second model, show that the
-		three coin tosses are *not* independent.
+    3. Show that two tosses of either coin are independent. Show that 
+		three tosses of the Zero-parity coin are *not* independent.
 		
-	4. Can you give another probability assignment on the coin tosses such
-		that the event: "first coin shows Heads" is independent of 
-		any event you could construct from the second and third coins alone?
+	4. Can you give another probability law on three coin tosses  such
+		that the event: "first toss shows Heads" is independent of 
+		any event you could construct only from the second and third tosses?
 
 2. Let us build on our abstract model of a communication link. As before,
     there is a transmitter and a receiver, and the transmitter
