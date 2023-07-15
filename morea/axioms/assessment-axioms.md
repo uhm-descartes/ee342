@@ -48,11 +48,10 @@ each of them as we come across new topics.
 	 coin tosses, we are actually thinking of binary state physical
 	 systems that could settle in each state with certain
 	 probabilities. All quantum states are inherently probabilistic,
-	 and all of quantum mechanics tracks these probabilities. Indeed,
+	 and a lot of quantum mechanics tracks these probabilities. Indeed,
 	 what you learn in 342 and 345 is basically the axiomatic
-	 foundation of quantum mechanics. I debated using spins for this
-	 example instead of pointless tossing of coins, but let us see
-	 what you think.
+	 foundation of quantum mechanics. 
+	 
 	   
 	   
 2. Consider the following abstract model of a perfect communication
