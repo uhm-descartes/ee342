@@ -30,22 +30,35 @@ each of them as we come across new topics.
        tosses has equal probability. What is the probability
        assignment for this model? 
 
-	c. Instead, suppose the coin tosses are rigged. The person tossing
-       the coin ensures that you only see an even number of Heads, but
-       makes sure that all sequences with an even number of Heads have
-       equal probabilities (whether 0 or 2 Heads among 3 coin
-       tosses). What is the probabilty assignment for this model?
-
+	c. Instead, suppose we have a special coin, which we will call the
+	   Zero-Parity coin. If you toss the coin thrice, you will only
+	   see an even number of Heads among the toss outcomes (you will
+	   never see 3 Heads for example). In addition, each sequence with
+	   an even number of Heads has equal probability (whether the
+	   sequence has 0 or 2 Heads among 3 coin tosses). What is the
+	   probabilty assignment for this model?
+	   
 	d. Under each of the probability models, what is the probability
        we observe 2 Heads?
 
+	   If you are wondering, you could realize such "coins" by three
+	   _entangled_ quantum electron-spins (often called entangled
+	   quantum bits or qubits).  Entangled qubits are a key ingredient
+	   in quantum computation. In a similar fashion, while we talk of
+	   coin tosses, we are actually thinking of binary state physical
+	   systems that could settle in each state with certain
+	   probabilities. All quantum states are inherently probabilistic,
+	   and all of quantum mechanics tracks these probabilities. I
+	   debated using spins for this example instead of pointless
+	   tossing of coins, but let us see what you think.
+	   
+	   
 2. Consider the following abstract model of a perfect communication
   link. There is a transmitter and a receiver, and the transmitter
   transmits one bit through a channel. The transmitter chooses 0 or 1
   with equal probability. The channel faithfully reproduces the input,
-  so the receiver sees the same bit transmitted by the channel.
-  Write a sample space and a probability assignment to model this
-  problem.
+  so the receiver sees the same bit transmitted by the channel.  Write
+  a sample space and a probability assignment to model this problem.
 
 3. _QuickSort_ is a recursive, divide-and-conquer algorithm to sort a
   sequence. Some of you may have seen this before. Each call to

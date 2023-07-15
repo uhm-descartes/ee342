@@ -29,9 +29,10 @@ These problems are a Bayesian reformulation of problems from previous modules.
 
    Now let us look at the following Composite scenario in the problems
    below. Assume that the Fair coin is chosen with prior probability
-   $$w$$ and the Zero-Parity coin is chosen with probability
-   $$1-w$$. Following the choice of the coin, it is tossed thrice. You
-   see the outcome of the coin tosses, but _not_ which coin was chosen.
+   $$w$$ and the Zero-Parity coin is chosen with prior probability
+   $$1-w$$. Following the choice of the coin, it is tossed thrice. In
+   the Composite scenario, you get to see the outcome of the coin
+   tosses, but _not_ which coin was chosen.
       * What is the probability of each sequence of possible 
 		toss outcomes (for example, HHH, HHT, etc.) in
 		the Composite scenario?
