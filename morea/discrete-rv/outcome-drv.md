@@ -8,8 +8,9 @@ morea_sort_order: 60
 
   * You understand what functions are, and what a random variable is
   * You understand composition of functions, and functions of random variables
-  * You understand the pmf on discrete random variables
+  * You understand the pmf on (individual and multple) discrete random variables
   * You can compute the expectation of random variables (and their functions)
   * You understand why the expectation is a linear function of the random variables
   * You can compute the higher moments of a random variable, in particular the variance
-  
+  * You can define the moment generating function
+  * You understand why the moment generating function is called as such
