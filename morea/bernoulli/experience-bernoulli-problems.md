@@ -47,10 +47,10 @@ morea_labels:
    ever). But, particularly if $$n$$ is small, the fact that we have
    not seen a one so far may be just coincidence, we shouldn't
    summarily exclude it from consideration altogether. It may be
-   better to assign a small but non-zero value to $$p$$. In that
-   sense, the ML procedure is a little aggressive on the data, and it
-   perhaps overvalues the observations. This is the "unseen event"
-   problem.
+   better to assign a small but non-zero value for the parameter. In
+   that sense, the ML procedure is a little aggressive, and it perhaps
+   overvalues the observations. This is the "unseen event" or "missing
+   mass" problem.
 
 2. **Bayesian approach** The Laplace estimator was the first approach
    to gauge probabilities of events that are unseen. This is better
@@ -62,8 +62,8 @@ morea_labels:
    parameter $$P$$, and represents our (subjective) prior belief.
 
    Let $$P$$ be a random variable uniformly distributed in $$[0,1]$$.
-   As in the prior problem, given $$P$$, $$X_1, \ldots, X_n$ are generated
-   \iid $$P$$ and $$Y= X_1+\ldots + X_n$$ as before. This means
+   As in the prior problem, given $$P$$, $$X_1, \ldots, X_n$$ are generated
+   \iid $$P$$ and $$Y= X_1+\ldots + X_n$$ as before. This means of course that
    that $${\mathbb P}(X_1, \ldots, X_n | P) = P^Y (1-P)^{n-Y}$$. 
    
 
@@ -129,7 +129,7 @@ morea_labels:
  ( \textrm{ element }i\textrm{ appeared exactly }r\textrm{ times in }X_1,\ldots, X_n ),$$
 	
 	where $$p_i$$ is the probability of element $$i\in S$$, and $${\mathbf 1}
-(statement)$$ is a binary valued function that is 1 when the argument is true, and 0 else.
+(statement)$$ is a binary valued function that evaluates to 1 when the statement is true, and 0 else.
    
 	
 	* Find $${\mathbb E} p(S_r)$$
@@ -157,11 +157,11 @@ morea_labels:
 	 $$X_1,\ldots, X_n$$ ($$r=0$$) is proportional to the number of elements
 	 of $$S$$ that only showed up once in $$X_1,\ldots, X_n$$:
 	 
-	 $$ p(S_0) \approx \frac{r+1}{n+1} |S_{1}|, $$
+	 $$ p(S_0) \approx \frac{1}{n+1} |S_{1}|, $$
 	 
 	 The above is the celebrated Good-Turing estimate of the "missing mass".
 	 
-   The Enigma story goes as follows. The Germans had an encryption
+   **The Enigma story** The Germans had an encryption
    machine called the Enigma. The encrypting and decrypting side had
    identical machines.  Set to a password, the encrypting machine
    would produce a cipher for any plaintext message typed on it. Set
@@ -185,17 +185,17 @@ morea_labels:
    of: given the history of password choices, what is the probability
    that the current password is one that has never been seen before?
    
-   Another story: in its initial years, Apple was often asked if its
-   logo (an apple with a bite taken out) was a tribute to
+   **Another story** In its initial years, Apple was often asked if
+   its logo (an apple with a bite taken out) was a tribute to
    A.M. Turing. Turing was homosexual, and was "convicted" for it,
-   chemically castrated, and publicly humiliated. A combination of
-   this and other factors led to his suicide in 1954 at the age of 41,
-   where a half-eaten apple was found at his side.  Turns out it was a
-   coincidence. When Steve Jobs was asked about it, he replied, “God,
-   we wish it were.”  It was only in 2009 that, after a long campaign
-   by scientists and mathematicians that persisted after several
-   objections by the British parliament, Turing was reluctantly
-   "pardoned".
+   chemically castrated, and publicly humiliated after WW2. A
+   combination of this and other factors led to his suicide in 1954 at
+   the age of 41, where a half-eaten apple was found at his side.
+   Turns out it was a coincidence and Steve Jobs would lament later
+   how he wished the logo was a tribute to Turing. In 2009, after a
+   long campaign by scientists and mathematicians who persisted after
+   several objections by the British parliament, Turing was
+   reluctantly "pardoned".
 
 
 
