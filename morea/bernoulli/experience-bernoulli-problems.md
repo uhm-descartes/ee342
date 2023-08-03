@@ -67,15 +67,20 @@ morea_labels:
    that $${\mathbb P}(X_1, \ldots, X_n | P) = P^Y (1-P)^{n-Y}$$. 
    
 
-    * Find $$f( P | X_1, \ldots, X_n)$$ using Bayes Rule. To do this, use the
-      Beta-Gamma integral, that says that for integral $$k$$, 
+    * Find $$f( P | X_1, \ldots, X_n)$$ using Bayes Rule. This step is
+	  why the procedure is called "Bayesian". We know the data
+	  generating models, $${\mathbb P}(X_1,\ldots, X_n|P)$$ as well as
+	  the prior over $$P$$, and we need to invert the order of
+	  conditioning with the Bayes rule. For simplification, you may
+	  find the Beta-Gamma integral useful---for integral $$k\ge 0$$,
 	  	
 		$$ \int_{0}^1 x^k (1-x)^{n-k} dx = \frac{k!(n-k)!}{(n+1)!}.$$
 
-	   This pdf $$f( P | X_1, \ldots, X_n)$$ represents our updated belief on
-	   the parameter $$P$$ after seeing the data. Look at the visualizations
-	   in the associated notebook. This is therefore called the _posterior_
-	   belief on the parameter $$P$$.
+	   This pdf $$f( P | X_1, \ldots, X_n)$$ can be interpreted as our
+	   updated belief on the parameter $$P$$ after seeing the
+	   data. Look at the visualizations in the associated
+	   notebook. This is therefore called the _posterior_ belief on
+	   the parameter $$P$$.
 
 	* In the Bayesian way of thinking, we don't just maximize
       $$f(P|X_1, \ldots, X_n)$$. We would like all models to participate,
@@ -192,10 +197,10 @@ morea_labels:
    combination of this and other factors led to his suicide in 1954 at
    the age of 41, where a half-eaten apple was found at his side.
    Turns out it was a coincidence and Steve Jobs would lament later
-   how he wished the logo was a tribute to Turing. In 2009, after a
-   long campaign by scientists and mathematicians who persisted after
-   several objections by the British parliament, Turing was
-   reluctantly "pardoned".
+   how he wished that the Apple logo was indeed designed to be a
+   tribute to Turing. In 2009, after a long campaign by scientists and
+   mathematicians who persisted despite several objections by the
+   British parliament, Turing was reluctantly "pardoned".
 
 
 
