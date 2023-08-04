@@ -52,16 +52,26 @@ morea_labels:
    overvalues the observations. This is the "unseen event" or "missing
    mass" problem.
 
-2. **Bayesian approach** The Laplace estimator was the first approach
-   to gauge probabilities of events that are unseen. This is better
-   seen in what is known as the Bayesian context. Imagine now that
-   $$p$$ is not a fixed quantity, but is a random variable
-   itself. $$p$$ can take values in the interval $$[0,1]$$. Now we
-   only know one continuous probability model, the one that assigns a
-   uniform pdf on $$[0,1]$$. This is called the _prior_ on the
-   parameter $$P$$, and represents our (subjective) prior belief.
+2. **Bayesian approach** The
+   [Laplace](https://en.wikipedia.org/wiki/Pierre-Simon_Laplace)
+   estimator was the first approach to gauge probabilities of events
+   that are unseen. Laplace had this
+   [question](https://en.wikipedia.org/wiki/Sunrise_problem): given
+   that we have seen the sun rise for the last $$n$$ days, what is the
+   probability it will rise tomorrow?
+      
+   We will understand Laplace's estimator in the Bayesian
+   context. Imagine now that the Bernoulli parameter is not a
+   fixed quantity as we have seen it thus far, but is a random
+   variable, which we will denote by $$P$$. The parameter can take
+   values in the interval $$[0,1]$$. Now we only know one continuous
+   probability model so far, the one that assigns a uniform pdf on
+   $$[0,1]$$. Let us use this to model how the parameter is
+   chosen. This probability model on the parameter is called the
+   _prior_ on the parameter $$P$$, and represents our (subjective)
+   prior belief.
 
-   Let $$P$$ be a random variable uniformly distributed in $$[0,1]$$.
+   So we let $$P$$ be a random variable uniformly distributed in $$[0,1]$$.
    As in the prior problem, given $$P$$, $$X_1, \ldots, X_n$$ are generated
    \iid $$P$$ and $$Y= X_1+\ldots + X_n$$ as before. This means of course that
    that $${\mathbb P}(X_1, \ldots, X_n | P) = P^Y (1-P)^{n-Y}$$. 
@@ -71,8 +81,18 @@ morea_labels:
 	  why the procedure is called "Bayesian". We know the data
 	  generating models, $${\mathbb P}(X_1,\ldots, X_n|P)$$ as well as
 	  the prior over $$P$$, and we need to invert the order of
-	  conditioning with the Bayes rule. For simplification, you may
-	  find the Beta-Gamma integral useful---for integral $$k\ge 0$$,
+	  conditioning with the Bayes rule. Thus far, we have only used
+	  Bayes rule with discrete random variables. Here $$P$$ is
+	  continuous, but the good news is that even when continuous
+	  random variables are involved, the Bayes rule holds in the same
+	  form as the discrete case, replacing pmfs/probabilities with
+	  pdfs/evaluations of pdfs at points. Despite the fact that the
+	  evaluation of a pdf at a particular point is **not** a
+	  probability (and can be greater than 1). See Chapter 3.6 in the
+	  text if you need to review this later. 
+	  
+	  For simplification, you may find the Beta-Gamma integral
+	  useful---for integral $$k\ge 0$$,
 	  	
 		$$ \int_{0}^1 x^k (1-x)^{n-k} dx = \frac{k!(n-k)!}{(n+1)!}.$$
 
