@@ -21,4 +21,7 @@ morea_labels:
 morea_sort_order: 71
 ---
 
-Bernoulli and friends
+Bernoulli and friends. The picture is Pascal's triangle made of
+binomial coefficients, whose eponymous random variable captures
+independent Bernoulli trials. 
+
