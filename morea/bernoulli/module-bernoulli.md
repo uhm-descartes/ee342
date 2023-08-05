@@ -14,7 +14,7 @@ morea_experiences:
 morea_assessments:
  #  - assessment-bernoulli
 morea_type: module
-morea_icon_url: /morea/CHANGE-ME/CHANGE-ME.png
+morea_icon_url: /morea/bernoulli/pascal.svg
 morea_start_date: "2023-09-25"
 morea_end_date: "2023-10-02"
 morea_labels:
