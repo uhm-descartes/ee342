@@ -21,7 +21,8 @@ morea_labels:
 morea_sort_order: 71
 ---
 
-Bernoulli and friends. The picture is Pascal's triangle made of
-binomial coefficients, whose eponymous random variable captures
-independent Bernoulli trials. 
+Bernoulli and Binomial random variables. The picture is Pascal's
+triangle made of binomial coefficients, eponymous with the random
+variable that captures number of successes in a fixed number of
+independent Bernoulli trials.
 
