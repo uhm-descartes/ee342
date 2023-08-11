@@ -12,7 +12,7 @@ morea_labels:
 
 1. Let $$X$$ and $$Y$$ be independent Geometric $$p$$ random variables. Show that 
 
-	$$\prob(X = i | X+Y = n) = \frac1{n-1}, \qquad \textrm{ for } i = 1,2,\ldots, n-1. $$
+	$${\mathbb P}(X = i | X+Y = n) = \frac1{n-1}, \qquad \textrm{ for } i = 1,2,\ldots, n-1. $$
 	
 2. **Maximum entropy models** A lot of physical systems are modeled
    with what is known as the maximum entropy approach. This is very
@@ -21,7 +21,7 @@ morea_labels:
    models a complex phenomenon, and therefore adopts a probabilistic
    description of the phenomenon. Let $$X$$ be a random variable
    taking values in $$\{1,2,3, \ldots\}$$ (ie any natural number), and
-   suppose we know that $$\E X = \mu$$. We want the probability model
+   suppose we know that $${\mathbb E} X = \mu$$. We want the probability model
    for $$X$$, and just knowing the expectation doesn't give us the
    probability model. Furthermore, doing experiments to find out the
    probability of each number is not usually feasible.
@@ -33,22 +33,25 @@ morea_labels:
 
     $$ - \sum_{i\ge 1} p_i \ln p_i. $$
 
-   The entropy quantifies the information we obtain by observing $$X$$.
-   Imagine there is some pmf $$p$$ that maximizes the entropy of
-   $$X$$.  Any other pmf provides less information when we observe
-   $$X$$, which can be interpreted as follows: we get less information
-   because of an implicit assumption we already made about $$X$$. So
-   the "no further assumptions" model is the maximum entropy model.
+   The entropy quantifies the information we obtain by observing
+   $$X$$.  Imagine there is some pmf $$p$$ that maximizes the entropy
+   of $$X$$.  Any other pmf model $$q$$ for the random variable
+   provides less information when we observe it, which we interpret as
+   follows: we must be getting less information from the observation
+   because of an implicit assumption we made when we assigned $$q$$ as
+   the pmf. So the "no further assumptions" model is the maximum
+   entropy model.
 
    Now, given $$X$$ is a random variable taking values in
-   $$\{1,2,3,\ldots\}$$, with $$\E X = \mu$$, find the maximum entropy
+   $$\{1,2,3,\ldots\}$$, with $${\mathbb E} X = \mu$$, find the maximum entropy
    probability model for $$X$$.  As you notice, the maximum entropy
    model is a geometric distribution.
 
-3. Let $$N_1$$ be a Binomial $$n, p$$ random variable (the number of
-   1s in $$n$$ independent Bernoulli $$p$$ trials). Let $$N_0 = n-N_1$$
-   be the number of 0s in those trials, which is a Binomial $$n, 1-p$$
-   random variable. Now since $$N_1+N_0=n$$, they are not independent.
+3. **Poissonization** Let $$N_1$$ be a Binomial $$n, p$$ random
+   variable (the number of 1s in $$n$$ independent Bernoulli $$p$$
+   trials). Let $$N_0 = n-N_1$$ be the number of 0s in those trials,
+   which is a Binomial $$n, 1-p$$ random variable. Now since
+   $$N_1+N_0=n$$, they are not independent.
    
    Now, let us take an alternate perspective. Let us imagine $$N$$ to
    be a Poisson random $$\lambda$$ variable. Conditioned on $$N$$, let
