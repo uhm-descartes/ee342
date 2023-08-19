@@ -5,11 +5,11 @@ morea_coming_soon: false
 morea_id: module-cond_exp
 morea_prerequisites:
 morea_outcomes:
-  # - outcome-cond_exp
+   - outcome-cond_exp
 morea_readings:
-  # - reading-text-cond_exp
+   - reading-text-cond_exp
 morea_experiences:
-  # - experience-cond_exp-prob
+   - experience-cond_exp-prob
 morea_assessments:
   # - assessment-cond_exp
 morea_type: module
