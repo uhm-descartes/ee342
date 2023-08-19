@@ -9,7 +9,7 @@ morea_type: assessment
 morea_start_date: "2023-08-21T09:00"
 morea_labels:
 ---
-# Quiz 1
+# Quiz 1 and 2
 
-Please access quiz 1 on Laulima and submit it by the due date listed therein.
+Please access quizzes 1 and 2 on Laulima and submit it by the due date listed therein.
 
