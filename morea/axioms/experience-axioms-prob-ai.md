@@ -1,7 +1,7 @@
 ---
 title: "Machine learning: classification"
 published: true
-morea_id: experience-axioms-prob-quicksort
+morea_id: experience-axioms-prob-ai
 morea_type: experience
 morea_summary: "Problems in class"
 morea_start_date: "2023-09-01"
