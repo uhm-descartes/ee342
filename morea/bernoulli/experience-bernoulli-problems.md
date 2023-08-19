@@ -88,8 +88,7 @@ morea_labels:
    $$i'$$th channel use. Let $$R_n$$ denote the number of transmitted
    bits. 
    
-   The rate of transmission is defined to be $$\lim_{n\to\infty}
-   \frac{{\mathbb E} R_n}n$$.
+   The rate of transmission is defined to be $$\lim_{n\to\infty \frac{ {\mathbb E} R_n}n$$.
   
     * Show that $${\mathbb E} R_n = n(1-\epsilon)$$. Therefore, the
       rate of transmission of information is $$1-\epsilon$$.
