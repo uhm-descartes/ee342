@@ -12,6 +12,10 @@ morea_readings:
 morea_experiences:
    - experience-counting
    - experience-vitali
+   - experience-axioms-prob-coins
+   - experience-axioms-prob-comm
+   - experience-axioms-prob-quicksort
+   - experience-axioms-prob-ai
 morea_assessments:
    - assessment-axioms
 morea_type: module

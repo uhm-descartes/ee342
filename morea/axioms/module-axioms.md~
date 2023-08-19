@@ -7,19 +7,22 @@ morea_prerequisites:
 morea_outcomes:
    - outcome-axioms
 morea_readings:
-   - reading-text
+   - reading-axioms-text
    - reading-axioms
 morea_experiences:
    - experience-counting
-   - experience-banachtarski
+   - experience-vitali
 morea_assessments:
    - assessment-axioms
 morea_type: module
-morea_icon_url: /morea/CHANGE-ME/CHANGE-ME.png
-morea_start_date: "2023-08-28"
-morea_end_date: "2023-09-03"
+morea_icon_url: /morea/axioms/kolmogorov.png
+morea_start_date: "2023-08-27"
+morea_end_date: "2023-09-02"
 morea_labels:
 morea_sort_order: 21
 ---
 
-Setup of a probability space
+The photo you see is of Andrey Kolmogorov. who fundamentally
+transformed probability theory (and many other areas). His academic
+career started as an editor of his school journal at the age of
+5, where he noticed that the first $$n$$ odd numbers sum to $$n^2$$.
