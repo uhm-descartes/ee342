@@ -12,6 +12,8 @@ morea_readings:
 morea_experiences:
    - experience-slf
    - experience-cantor
+   - experience-slf-prob-cp
+   - experience-slf-prob-if
 morea_assessments:
    - assessment-slf
 morea_type: module

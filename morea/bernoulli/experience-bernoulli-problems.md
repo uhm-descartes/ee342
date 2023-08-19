@@ -64,7 +64,7 @@ morea_labels:
    you see a bit at the output, you know the channel introduced no
    error. If you see an erasure, you do not know what the input
    is. Let the input be $$X$$, taking values in $$\{0,1\}$$, and the
-   output is $$Y$$, taking values in $$\{0,1,$$\frac12$$\}$$. Assume
+   output is $$Y$$, taking values in $$\{0,1,\frac12\}$$. Assume
    $$X$$ is Bernoulli $$p$$.
 
     * Let $$E = {\mathbb 1}(|X_Y|>0)$$. Note that $$E$$ is an
@@ -88,7 +88,7 @@ morea_labels:
    $$i'$$th channel use. Let $$R_n$$ denote the number of transmitted
    bits. 
    
-   The rate of transmission is defined to be $$\lim_{n\to\infty \frac{ {\mathbb E} R_n}n$$.
+   The rate of transmission is defined to be $$\lim_{n\to\infty} \frac{ {\mathbb E} R_n}n$$.
   
     * Show that $${\mathbb E} R_n = n(1-\epsilon)$$. Therefore, the
       rate of transmission of information is $$1-\epsilon$$.
@@ -114,7 +114,8 @@ morea_labels:
    5G networks with increasing communication speeds resulted in
    figuring out ever more creative ways to build effective channels
    with greater capacities, for example, by using more antennas,
-   packet or message switching.
+   packet or message switching, OFDM, mmWave range, beamforming and
+   others.
 
    
 
