@@ -1,5 +1,5 @@
 ---
-title: "Communication channels"
+title: "Quicksort"
 published: true
 morea_id: experience-axioms-prob-quicksort
 morea_type: experience
