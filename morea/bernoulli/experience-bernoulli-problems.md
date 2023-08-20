@@ -67,39 +67,60 @@ morea_labels:
    output is $$Y$$, taking values in $$\{0,1,\frac12\}$$. Assume
    $$X$$ is Bernoulli $$p$$.
 
-    * Let $$E = {\mathbb 1}(|X_Y|>0)$$. Note that $$E$$ is an
+    * Let $$E = {\mathbf 1}(|X-Y|>0)$$. Note that $$E$$ is an
       indicator for an erasure (it is 1 if there is an erasure and 0
       if not). Show that $$E$$ is independent of $$X$$
 	* What is the conditional distribution on $$X$$ given (i) $$Y=0$$,
       (ii) $$Y=\frac12$$, and (iii) $$Y=1$$.
    
-   Consider a variation of the above. The channel is used $$n$$ times,
-   and the channel acts on each input bit as described above
-   independently of what happened in other channel uses (I need to
-   specify this, since there are other ways the channel could behave
-   and still be consistent with the prior information). There is an
-   oracle with the BEC who tells the transmitter whether or not the
-   input bit goes through or whether it was erased. Consider the
-   following natural oracle-aided communication strategy: the
-   transmitter retransmits a bit till it goes through. Depending on
-   how many erasures happen among the $$n$$ channel uses, the number
-   of bits that make it across the receiver changes. Let $$Z_i$$ be a
-   Bernoulli variable that indicates if an erasure happened in the
-   $$i'$$th channel use. Let $$R_n$$ denote the number of transmitted
-   bits. 
+   In practice, the channel is used not once but several times.  Let
+   the channel be used $$n$$ times. Assume further that the channel
+   acts on each input bit independently of what happened in other
+   channel uses. Specifically, let $$E_i$$ indicate whether the
+   $$i'$$th bit was erased. Our model says that $$E_i$$ are independent.
    
-   The rate of transmission is defined to be $$\lim_{n\to\infty} \frac{ {\mathbb E} R_n}n$$.
+	* There are many other ways the channel can act on the input bits
+	  other than independently, and still satisfy the individual
+	  channel use model: each $$E_i$$ is independent of $$X_i$$ and is
+	  a Bernoulli $$\epsilon$$ random variable. Can you come up with 
+	  another model for the $$E_1,\ldots E_n$$, preserving the
+	  individual channel use model, but such that $$E_1,\ldots E_n$$
+	  are not independent?
+	  
+   Suppose we have access to an oracle who can tell the transmitter
+   whether the input bit went through or whether it was erased. Then
+   consider the following natural oracle-aided communication strategy:
+   the transmitter retransmits a bit till it goes through. Depending
+   on how many erasures happen among the $$n$$ channel uses, the
+   number of bits that make it across the receiver changes. Let
+   $$R_n$$ denote the number of transmitted bits.
+
+    * Show that $$R_n = n - \sum_{i=1}^n E_i$$.
+   
+   The rate of transmission is defined to be
+
+   $$\lim_{n\to\infty} \frac{ {\mathbb E} R_n}n$$.
   
     * Show that $${\mathbb E} R_n = n(1-\epsilon)$$. Therefore, the
       rate of transmission of information is $$1-\epsilon$$.
 	
-   Incidentally, it can be shown (though it is a lot harder) that you
+   Incidentally, it can be shown (though it is a lot deeper) that you
    can achieve arbitrarily close to this rate even without an
-   oracle. And more remarkably, it can also be shown that no scheme
-   can do better than this. The quantity $$1-\epsilon$$ is called
-   the _capacity_ of a channel, the maximum amount of information
-   that we could push through. It is a fundamental limit associated
-   with channels. 
+   oracle. And more remarkably, it can also be shown that no scheme,
+   however advanced or smart, can have a better rate than $$1-\epsilon$$.
+
+   Therefore the quantity $$1-\epsilon$$ is a fundamental property of
+   the Binary Erasure channel, and is called its _capacity_, the
+   maximum amount of information that we could push through. All
+   physical channels are modeled as above as conditional probabilities
+   of the output given every possible value of the input. All such
+   channels have a capacity associated with.
+
+   A big part of engineering in communications often involves
+   understanding these limits and finding better and creative
+   techniques to create channels with greater capacities. This is the
+   bread and butter of companies like Qualcomm, Broadcomm and others
+   (whose techniques are in almost every phone in North America).
    
    Most of you have probably never seen a telephone dialup modem,
    which used the voice range of the telephone line to carry internet
@@ -107,15 +128,15 @@ morea_labels:
    theory as above, was 56k bits/second. This is a fundamental speed
    limit, and no technology can circumvent the 56k barrier on the
    voice range of a telephone channel. Therefore, DSL was developed to
-   incorporate frequencies outside the voice range. Today, the speed
-   increases Hawaii Telecom touts for DSL typically results from
-   shortening distances to the first digital link in the provider
-   infrastructure. Similarly, the evolution from the 2G -> 3G -> 4G ->
-   5G networks with increasing communication speeds resulted in
-   figuring out ever more creative ways to build effective channels
-   with greater capacities, for example, by using more antennas,
-   packet or message switching, OFDM, mmWave range, beamforming and
-   others.
+   use frequencies outside the voice range for data
+   communication. Today, the speed increases Hawaii Telecom touts for
+   DSL typically results from shortening distances to the first
+   digital relay in the provider infrastructure. Similarly, the
+   evolution from the 2G -> 3G -> 4G -> 5G networks with increasing
+   communication speeds resulted in figuring out ever more creative
+   ways to build effective channels with greater capacities, for
+   example, by using more antennas, packet or message switching, OFDM,
+   mmWave range, beamforming and others. 
 
    
 
