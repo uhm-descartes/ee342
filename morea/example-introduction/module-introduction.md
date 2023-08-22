@@ -25,6 +25,6 @@ morea_sort_order: 01
 ---
 
 Overview of EE 342, and some simple initial tasks to get oriented and ready for the course.
-View the full comic [here](https://xkcd.com/2370/). Syllabus [here](/morea/example-introduction/f23syllabus.pdf)
+View the full comic [here](https://xkcd.com/2370/). Syllabus [here](https://uhm-descartes.github.io/ee342/morea/example-introduction/f23syllabus.pdf)
 
 
