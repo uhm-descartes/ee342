@@ -15,33 +15,47 @@ set. This is the way you construct the Cantor set:
 
 Start from the closed interval [0,1]. (A closed interval includes both end points)
 
-1. Remove the open middle third (ie the interval $$(\frac13, \frac23)$$. What remains are two closed intervals, $$[0,\frac13]$$ and $$[\frac23, 1]$$. (An open interval excludes both the end points). We removed 1/3 of the interval,
-	(so 2/3 remains). Carry over these 2 intervals to next step.
+1. Remove the open middle third (ie the interval $$(\frac13,
+	\frac23)$$). An open interval excludes both end points. Now what
+	remains are two closed intervals, $$[0,\frac13]$$ and $$[\frac23,
+	1]$$. We removed 1/3 of the interval [0,1], (so the sum of lengths
+	of the two intervals remaining is 2/3). Carry over these 2
+	intervals to next step.
 2. From steps 2 onwards:
    * Step i: There will be $$2^{i-1}$$ closed intervals carried over
-     from the prior step, each with size $$\frac1{3^{i-1}}$$. Remove the
-     middle open one third of each of the $$2^{i-1}$$ closed
+     from the prior step, each with size $$\frac1{3^{i-1}}$$. Remove
+     the middle open one third of each of the $$2^{i-1}$$ closed
      intervals. As a result, we are left with $$2^i$$ closed
-     intervals, each with size $$\frac1{3^i}$$. The length removed equals
-	 $$2^{i-1}/3^i$$. Carry these to the next
-     step. The total length carried over is $$\frac{2^i}{3^i}$$.
+     intervals, each with size $$\frac1{3^i}$$. The length removed
+     equals $$2^{i-1}/3^i$$. Carry the $$2^i$$ closed intervals
+     remaining to the next step. The sum of lengths of the intervals
+     carried over is $$\frac{2^i}{3^i}$$.
   
 The Cantor set $$\cal C$$ is what remains after you do this procedure for all
 natural numbers $$i\ge 1$$. 
 
-How do you know any element remains? Here is a way to get a handle on
-what is happening. In the first step, let us represent every number in
-the closed interval [0,1] with its ternary expansion. The ternary (or
+How do you know any element remains after you have done the procedure
+for all $$i\ge 1$$? Here is a way to get a handle on what is
+happening. In the first step, let us represent every number in the
+closed interval [0,1] with its ternary expansion. The ternary (or
 binary or decimal) expansions are generally not unique---for example,
-$$1/3 = .1_3 = .022222..._3$$ (all numbers of form $$m/3^n$$ have two
-representations as above), and $$2/3 = .2_3 = .122222..._3$$). This is
-true for decimals too, since $$.1_{10} = .099999..._{10}$$, and so
-on. Choose .02222... for 1/3 and .2 for 2/3. Now note that every
-number in the open middle one third reads $$.1xxx_3$$ (in _all_ its
-representations).  So the open middle one third must use a 1 in the
-first position of its ternary representation. Similarly, after the 
-second step, every number removed must have a 1 in its second position
-after the point. And so on. 
+
+$$1/3 = .1_3 = .022222..._3$$ 
+
+and
+
+$$2/3 = .2_3 = .122222..._3$$
+
+In fact, all numbers of form $$m/3^n$$ have two representations as
+above. The redundancy in representation happens with decimals too,
+since $$.1_{10} = .099999..._{10},$$ and so on. 
+
+Choose .02222... as our prefered representation of 1/3 and choose .2 for
+2/3. Now note that every number in the open middle one third reads
+$$.1xxx_3$$ (in _all_ its representations).  So the open middle one
+third must use a 1 in the first position in any of its ternary
+representations. Similarly, after the second step, every number removed
+must have a 1 in its second position after the point. And so on.
 
 The numbers that remain are therefore all the numbers that can be
 represented without using a 1 in some representation (so 1/3, 2/3 both
