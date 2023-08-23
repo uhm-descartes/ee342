@@ -1,5 +1,5 @@
 ---
-title: "Cantor Set"
+title: "Cantor Set*"
 published: true
 morea_id: experience-cantor
 morea_type: experience
@@ -9,6 +9,8 @@ morea_labels:
 ---
 
 # Cantor Set
+This is advanced material. It is a lot of fun to know and think about,
+but you will not be tested in EE342 about any of the following.
 
 The logo you see for this module is a representation of the Cantor
 set. This is the way you construct the Cantor set: 

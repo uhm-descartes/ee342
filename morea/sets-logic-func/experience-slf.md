@@ -1,5 +1,5 @@
 ---
-title: "Logicomix"
+title: "Logicomix*"
 published: true
 morea_id: experience-slf
 morea_type: experience
@@ -9,6 +9,8 @@ morea_labels:
 ---
 
 # The development of set theory
+This is advanced material. It is a lot of fun to know and think about,
+but you will not be tested in EE342 about any of the following.
 
 Once you get familiar with set comprehension, consider the following (Russell's
 paradox): \\(A\\) is the set of all sets that are not members of themselves, specifically
