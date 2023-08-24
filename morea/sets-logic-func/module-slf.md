@@ -9,6 +9,7 @@ morea_outcomes:
 morea_readings:
    - reading-slf-text
    - reading-slf
+   - reading-slf-lec
 morea_experiences:
    - experience-slf
    - experience-cantor
