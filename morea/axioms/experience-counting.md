@@ -1,5 +1,5 @@
 ---
-title: "Countability and Uncountability"
+title: "Countability and Uncountability*"
 published: true
 morea_id: experience-counting
 morea_type: experience

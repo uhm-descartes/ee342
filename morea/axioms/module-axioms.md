@@ -12,6 +12,7 @@ morea_readings:
 morea_experiences:
    - experience-counting
    - experience-vitali
+   - experience-axioms-lec
    - experience-axioms-prob-coins
    - experience-axioms-prob-comm
    - experience-axioms-prob-quicksort

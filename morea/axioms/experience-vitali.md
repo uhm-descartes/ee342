@@ -1,5 +1,5 @@
 ---
-title: "Sets of real numbers with no length"
+title: "Sets of real numbers with no length*"
 published: true
 morea_id: experience-vitali
 morea_type: experience
