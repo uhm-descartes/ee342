@@ -99,7 +99,8 @@ problems in the previous module.
 	the coin toss is $$+1$$, we choose a number from $$T$$ to $$T+1$$,
 	using a uniform pdf.
 	
-	Our learning algorithm sees a training point $$x$$ and its label.
+	Our learning algorithm sees a training point $$x$$ and its label. It
+	does not know $$f$$ nor does it know $$T$$.
 	If the label of the training point $$x$$ is -1, the algorithm
 	outputs as its estimate of the threshold to be $$x+\frac12$$, If the
 	label of the training point $$x$$ is +1, the algorithm outputs
@@ -109,8 +110,7 @@ problems in the previous module.
 	
 	  a. What is the generalization error (the probability another
       point generated from $$f$$ is misclassified by the threshold
-      estimated by the learning algorithm) if the label of the
-      training point was $$-1$$? What if the label was $$+1$$?
+      estimated by the learning algorithm) given a specific training point $$x$$?
 	  
 	  b. What is the generalization error? The distinction between this
 	  and the prior quesiton motivates the topics in the next module.
