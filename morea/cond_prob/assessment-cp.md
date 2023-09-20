@@ -101,9 +101,9 @@ problems in the previous module.
 	
 	Our learning algorithm sees a training point $$x$$ and its label.
 	If the label of the training point $$x$$ is -1, the algorithm
-	outputs as its estimate of the threshold to be $$x+1-p$$, If the
+	outputs as its estimate of the threshold to be $$x+\frac12$$, If the
 	label of the training point $$x$$ is +1, the algorithm outputs
-	$$x-p$$. The idea is that since the learning algorithm does not
+	$$x-\frac12$$. The idea is that since the learning algorithm does not
 	know $$T$$, it uses its estimate of the threshold to classify
 	points instead.
 	
