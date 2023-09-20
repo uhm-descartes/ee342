@@ -65,7 +65,7 @@ problems in the previous module.
 	   
 	  2. This anticipates a future topic: given $$L_1$$, what is the distribution of $$L_2$$? 
 	   
-	  3. When _Quicksort_ is called on the two subsequences of length $$L_1$$ and $$L_2$$, each call produces a new pivot, say $$p_1$$ and $$p_2$$ respectively. Conditioned on any choice of $$p_0$$, the two pivots are chosen independently. But are $$p_0$$ and $$p_1$$ independent? (You can tell whether they are independent without any calculation).
+	  3. When _Quicksort_ is called on the two subsequences of length $$L_1$$ and $$L_2$$, each call produces a new pivot, say $$p_1$$ and $$p_2$$ respectively. Conditioned on any choice of $$p_0$$, the two pivots are chosen independently. But are $$p_1$$ and $$p_2$$ independent? (You can tell whether they are independent without any calculation).
 	   
 	  4. This question anticipates a future topic, but what is the _joint_ distribution of $$p_1$$ and $$p_2$$? We have not formally defined the joint distribution yet, but this problem helps you appreciate the need for one.   
   
