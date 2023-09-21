@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> EE 342 | Problems in class </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/ee342/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/ee342/css/style.css">
+  <link rel="stylesheet" href="/ee342/css/syntax.css">
+  <link rel="shortcut icon" href="/ee342/favicon.ico" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/020726ec0d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+
+  
+
+  <!-- Load JQuery, then use it to attach the class 'active' to navbar item currently displayed. -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(window).on('load', function () {
+      $('.nav-item').find('a[href="' + location.pathname + '"]').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+
+<div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/ee342/index.html"> EE 342 </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/prerequisites/">Prerequisites</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/modules/">Modules</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/outcomes/">Outcomes</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/readings/">Readings</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/experiences/">Experiences</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/assessments/">Assessments</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Internal fragment for displaying the breadcrumb bar -->
+<div class="breadcrumb-background" style="padding-top: 1em; padding-bottom: .01em">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        
+        <li class="breadcrumb-item"><a href="/ee342/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/ee342/modules">Modules</a></li>
+        <li class="breadcrumb-item"><a href="/ee342/modules/module-rv">Random Variables</a></li>
+        <li class="breadcrumb-item active">Problems in class</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="problems-in-class">Problems in class</h1>
+
+<p>These problems will show you the power of formalism. You have
+implicitly used random variables before, and it may not be clear why
+we make this so formal. The first example is primarily to get our feet
+wet. The next one, on Quicksort, shows the power of this approach.</p>
+
+<ol>
+  <li><strong>Coin Tosses</strong> Suppose we have \(n\) independent coin tosses, each
+coin having a probability of showing heads to be \(p\). In prior
+modules, we worked out cases for a specific, small value of \(n\), now
+we can wade in a little deeper.
+    <ul>
+      <li>Write a sample space for the experiment.</li>
+      <li>For \(1\le i\le n\), let \(X_i\) be the indicator that the
+   \(i\)‘th coin toss is heads. Note the explanation of indicator
+   from class, this will be very commonly reused. What is
+   \({\mathbb E} [X_i]\)?</li>
+      <li>Let \(N= X_1+ X_2 +\ldots + X_n\). \(N\) is now another random
+   variable. What would be a good interpretation for this random
+   variable?</li>
+      <li>What is \({\mathbb E}[ N]\)?</li>
+    </ul>
+
+    <p>Now we will pose a very similar looking problem, but we will only
+  specify the probability space partially. Specifying models
+  partially is quite realistic—in many applications, we cannot
+  truly get the full picture, but we still need to know what we can
+  infer from the partial model. For the following parts, we still
+  have a sequence of \(n\) toss outcomes, and each toss outcome has
+  probability \(p\) of being heads. But I do not tell you
+  anything more about the probability model, specifically, how the
+  different tosses depend on each other.</p>
+    <ul>
+      <li>Can you come up with a probability model on the \(n\) outcomes
+  (of course, consistent with the fact that each toss has
+  probability \(p\) of being heads), but something different from
+  the independent coin flips of the previous part?</li>
+      <li>Once again, for \(1\le i\le n\), let \(X_i\) be the indicator
+   that the \(i\)‘th toss is heads.  What is \({\mathbb E}
+   [X_i]\)?</li>
+      <li>Let \(N= X_1+ X_2 +\ldots + X_n\). What is \({\mathbb E} [N]\)?</li>
+    </ul>
+
+    <p>Notice how we can answer the above questions even though we don’t
+  have the full probability model.</p>
+  </li>
+  <li>
+    <p><strong>Quicksort</strong> Let us go back to Quicksort from prior modules. In
+this episode, we will see the probability any two elements are
+directly compared (in any step) of the Quicksort algorithm run on
+\(n\) elements, and thereby compute the average number of
+comparisons required for any sequence. Recall the probability space
+we wrote for this problem, but assume that the starting sequence is
+fixed. Equivalently, we are conditioning on the starting sequence.</p>
+
+    <p>We will adopt the following notation: for \(1\le i\le n\), we will
+denote by \(e_i\), the \(i'\)th smallest element in the list. We may
+not know as soon as we see a sequence which element it is, but it
+is one of the elements in the list.</p>
+
+    <p>We want to know the probability that element \(e_i\) and \(e_j\)
+are compared. To get this probability, we make the following
+observation: let \(S = \{ e_i, e_{i+1}, \ldots, e_{j-1},
+e_j\}\). In the beginning, all elements of \(S\) are in the same
+group (all \(n\) elements are).  As long as no element of \(S\) is
+chosen as the pivot, all elements of \(S\) continue to be in the
+same group (and no element of \(S\) is compared with any other
+element of \(S\)). The set \(S\) gets split into two groups the
+moment an element of \(S\) gets chosen as the
+pivot. And if so, during the split, \(e_i\) and \(e_j\) are
+compared directly only if one of \(e_i\) or \(e_j\) is chosen
+as the pivot. If not, \(e_i\) and \(e_j\) are never compared 
+directly in any future step (since they will now be in different groups).</p>
+
+    <ul>
+      <li>What is the probability that, given that a pivot is chosen among
+the elements of \(S\), the pivot is either \(e_i\) or \(e_j\)?
+This is also the probability that \(e_i\) and \(e_j\) are
+compared directly in any step of the Quicksort algorithm.</li>
+      <li>Let \(X_{ij}\) be the indicator for whether \(e_i\) and \(e_j\) are ever
+directly compared in the entire run of the Quicksort algorithm. What
+is \({\mathbb E} [X_{ij}]\)?</li>
+    </ul>
+
+    <p>Believe it or not, we now know the average running time of the Quicksort
+Algorithm. Let</p>
+
+\[M= \sum_{1\le i\le n} \sum_{ i \le j\le n} X_{ij}\]
+
+    <ul>
+      <li>What is a good interpretation for \(M\)?</li>
+      <li>What is \({\mathbb E} [M]\)?</li>
+    </ul>
+
+    <p>And there you go! You have done the first grown-up analysis. \(M\)
+is random, and depends on the choice of pivots. Different random
+choices could lead to different values of \(M\). But what we show
+is that the average value of \(M\) is \({\mathcal O}(n\log n)\),
+far smaller than the worst case value of \(n(n-1)/2\) (where every
+pair of elements are compared).</p>
+
+    <p>While \(X_{ij}\) are binary valued variables, like in the second
+part of the previous problem, we do not know anything about their
+dependence.  Typically, to compute averages, these dependences are
+unnecessary.  But of course, as we discussed in class, the
+concentration of \(M\) around \({\mathbb E}M\) is not known, so we
+don’t immediately know if this is a really good algorithm that uses
+\(n\log n\) comparisons most of the time or not. To get a picture of
+the concentration around the expectation, we need to unravel a little
+bit about the dependencies between the random variables \(X_{ij}\) 
+for different values of \(i,j\). We will do this in future modules.</p>
+  </li>
+</ol>
+
+
+</div>
+
+
+
+
+<!-- Maybe find a different way?
+<script src="/ee342/js/scrollIfAnchor.js"></script>
+-->
+
+<footer class="footer footer-background" style="padding-top: 1em; padding-bottom: 1em">
+  <div class="container text-center">
+    
+    <p>Narayana Prasad Santhanam | Electrical and Computer Engineering | University of Hawaii <br />
+nsanthan@hawaii.edu<br /></p>
+
+
+    
+    <p style="margin: 0">Powered by the <a class="footer-link" href="https://morea-framework.github.io/">Morea Framework</a> (Theme: spacelab)<br>
+      Last update on: <span>2023-09-20 14:45:35 -1000</span></p>
+
+    <p style="margin: 0">
+      
+      1 prerequisites |
+      
+      11 modules
+      
+      | 13 outcomes
+      
+      
+      | 24 readings
+      
+      
+      | 28 experiences
+      
+      
+      | 7 assessments
+      
+    </p>
+  </div>
+</footer>
+
+
+<!-- Load Bootstrap JavaScript components -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<!-- Add anchors to pages. -->
+<script>anchors.add();</script>
+
+
+</body>
+</html>

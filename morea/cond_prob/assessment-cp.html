@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> EE 342 | Quizzes and Problems </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/ee342/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/ee342/css/style.css">
+  <link rel="stylesheet" href="/ee342/css/syntax.css">
+  <link rel="shortcut icon" href="/ee342/favicon.ico" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/020726ec0d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+
+  
+
+  <!-- Load JQuery, then use it to attach the class 'active' to navbar item currently displayed. -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(window).on('load', function () {
+      $('.nav-item').find('a[href="' + location.pathname + '"]').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+
+<div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/ee342/index.html"> EE 342 </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/prerequisites/">Prerequisites</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/modules/">Modules</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/outcomes/">Outcomes</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/readings/">Readings</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/experiences/">Experiences</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/assessments/">Assessments</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Internal fragment for displaying the breadcrumb bar -->
+<div class="breadcrumb-background" style="padding-top: 1em; padding-bottom: .01em">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        
+        <li class="breadcrumb-item"><a href="/ee342/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/ee342/modules">Modules</a></li>
+        <li class="breadcrumb-item"><a href="/ee342/modules/module-cp">Conditional Probabilities and Independence</a></li>
+        <li class="breadcrumb-item active">Quizzes and Problems</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="quiz-3-and-4">Quiz 3 and 4</h1>
+
+<p>Please submit on Laulima as instructed</p>
+
+<h1 id="problems-in-class">Problems in class</h1>
+
+<p>The four problems here are a developed from the corresponding
+problems in the previous module.</p>
+
+<ol>
+  <li>
+    <p>Recall the 3-coin toss problem (Problem 1 from the previous module).</p>
+
+    <ol>
+      <li>
+        <p>Fair Coin: Suppose every sequence of coin tosses has equal
+probability. Show that each coin toss has probability \(1/2\)
+of being heads. What is the probability the first toss is heads
+given the second and third tosses have the same face (ie. the
+event that they are both heads or both tails)?</p>
+      </li>
+      <li>
+        <p>Zero-parity coin: This is a special coin such that if you toss
+it thrice, you are guaranteed to see only an even number of
+Heads.  However, all sequences with an even number of Heads
+have equal probability (regardless of whether the sequence has
+0 or 2 Heads among 3 coin tosses). What is the probability the
+first toss is heads given the second and third tosses have the
+same face (ie. the event that they are both heads or both
+tails)?</p>
+      </li>
+      <li>
+        <p>Show that two tosses of either coin are independent. Show that 
+ three tosses of the Zero-parity coin are <em>not</em> independent.</p>
+      </li>
+      <li>
+        <p>Can you give another probability law on three coin tosses  such
+ that the event: “first toss shows Heads” is independent of 
+ any event you could construct only from the second and third tosses?</p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>Let us build on our abstract model of a communication link. As before,
+ there is a transmitter and a receiver, and the transmitter
+ transmits one bit through a channel. The transmitter chooses 0 or
+ 1, but unlike the previous module, now the probability of a 1 is
+ \(p\). Now the link is not perfect. Given any input, the channel
+ flips the input bit with probability \(\epsilon\). This abstraction
+ is called a <em>Binary Symmetric Channel</em>.</p>
+
+    <ol>
+      <li>
+        <p>Phrase this channel model in terms of conditional probabilities.</p>
+      </li>
+      <li>
+        <p>If \(\epsilon = \frac12\), show that the received bit is independent of the transmitted bit. In this case of course, the implication is that there is nothing we could do to reconstruct the transmitted bit.</p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>We set up <em>QuickSort</em> in the last module. Please review the setup.
+ You set up the probability space for a sequence of length 4. In the 
+ first iteration, you would choose a pivot, say \(p_0\), and break
+ the sequence into two, calling the procedure recursively on each
+ subsequence.</p>
+
+    <ol>
+      <li>
+        <p>Let \(L_1\) and \(L_2\) be the lengths of the two sequences when you split the length 4 sequence. What is the distribution of \(L_1\)? Of \(L_2\)? Is it intuitive that they should have distributions related that way?</p>
+      </li>
+      <li>
+        <p>This anticipates a future topic: given \(L_1\), what is the distribution of \(L_2\)?</p>
+      </li>
+      <li>
+        <p>When <em>Quicksort</em> is called on the two subsequences of length \(L_1\) and \(L_2\), each call produces a new pivot, say \(p_1\) and \(p_2\) respectively. Conditioned on any choice of \(p_0\), the two pivots are chosen independently. But are \(p_1\) and \(p_2\) independent? (You can tell whether they are independent without any calculation).</p>
+      </li>
+      <li>
+        <p>This question anticipates a future topic, but what is the <em>joint</em> distribution of \(L_1\) and \(L_2\)? We have not formally defined the joint distribution yet, but this problem helps you appreciate the need for one.</p>
+      </li>
+    </ol>
+
+    <p>We are handcalculating everything for now because we want to
+  understand what is happening. Consequently, we are keeping the
+  sequence length small. You could easily simulate everything we are
+  doing here for larger sequence lengths. But simulations like this
+  not only tend to be overkill, but also may not reveal much insights,
+  because they carry too much detail (like the distribution of \(p_1\)
+  and \(p_2\)) that are not really that important. If we are
+  interested in running time, we will be able to identify a few
+  summaries to keep track of (we will learn them in Expectations of
+  Random Variables). We can often hand-calculate or estimate these
+  summaries better and faster than any simulation.</p>
+  </li>
+  <li>
+    <p>AI and Machine learning approaches almost always have a
+ probabilistic setup. We considered a classification problem in the
+ prior module.  where a threshold (a fixed but unknown number
+ \(T\)) splits the line into two (infinite length) intervals, the
+ left side of \(T\) carrying label -1 and the right side carrying
+ label +1. The threshold \(T\) is unknown and the learning
+ algorithm is supposed to figure this out.</p>
+
+    <p>Training points are generated by a pdf \(f\), which was left
+ unspecified last module, but which we will now specify. To
+ generate a training point from \(f\), first toss a biased coin
+ whose two sides are \(-1\) and \(+1\), and whose probability of landing
+ on \(+1\) is \(p\). If the outcome of the coin toss is \(-1\),
+ we choose a number from \(T-1\) to \(T\), using a uniform pdf. If
+ the coin toss is \(+1\), we choose a number from \(T\) to \(T+1\),
+ using a uniform pdf.</p>
+
+    <p>Our learning algorithm sees a training point \(x\) and its label. It
+ does not know \(f\) nor does it know \(T\).
+ If the label of the training point \(x\) is -1, the algorithm
+ outputs as its estimate of the threshold to be \(x+\frac12\), If the
+ label of the training point \(x\) is +1, the algorithm outputs
+ \(x-\frac12\). The idea is that since the learning algorithm does not
+ know \(T\), it uses its estimate of the threshold to classify
+ points instead.</p>
+
+    <p>a. What is the generalization error (the probability another
+   point generated from \(f\) is misclassified by the threshold
+   estimated by the learning algorithm) given a specific training point \(x\)?</p>
+
+    <p>b. What is the generalization error? The distinction between this
+   and the prior quesiton motivates the topics in the next module.</p>
+  </li>
+</ol>
+
+
+</div>
+
+
+
+
+<!-- Maybe find a different way?
+<script src="/ee342/js/scrollIfAnchor.js"></script>
+-->
+
+<footer class="footer footer-background" style="padding-top: 1em; padding-bottom: 1em">
+  <div class="container text-center">
+    
+    <p>Narayana Prasad Santhanam | Electrical and Computer Engineering | University of Hawaii <br />
+nsanthan@hawaii.edu<br /></p>
+
+
+    
+    <p style="margin: 0">Powered by the <a class="footer-link" href="https://morea-framework.github.io/">Morea Framework</a> (Theme: spacelab)<br>
+      Last update on: <span>2023-09-20 14:45:35 -1000</span></p>
+
+    <p style="margin: 0">
+      
+      1 prerequisites |
+      
+      11 modules
+      
+      | 13 outcomes
+      
+      
+      | 24 readings
+      
+      
+      | 28 experiences
+      
+      
+      | 7 assessments
+      
+    </p>
+  </div>
+</footer>
+
+
+<!-- Load Bootstrap JavaScript components -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<!-- Add anchors to pages. -->
+<script>anchors.add();</script>
+
+
+</body>
+</html>

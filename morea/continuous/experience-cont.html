@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> EE 342 | Problems in Class </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/ee342/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/ee342/css/style.css">
+  <link rel="stylesheet" href="/ee342/css/syntax.css">
+  <link rel="shortcut icon" href="/ee342/favicon.ico" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/020726ec0d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+
+  
+
+  <!-- Load JQuery, then use it to attach the class 'active' to navbar item currently displayed. -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(window).on('load', function () {
+      $('.nav-item').find('a[href="' + location.pathname + '"]').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+
+<div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/ee342/index.html"> EE 342 </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/prerequisites/">Prerequisites</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/modules/">Modules</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/outcomes/">Outcomes</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/readings/">Readings</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/experiences/">Experiences</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/assessments/">Assessments</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Internal fragment for displaying the breadcrumb bar -->
+<div class="breadcrumb-background" style="padding-top: 1em; padding-bottom: .01em">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        
+        <li class="breadcrumb-item"><a href="/ee342/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/ee342/modules">Modules</a></li>
+        <li class="breadcrumb-item"><a href="/ee342/modules/module-cont">Continuous Random Variables: Exponential</a></li>
+        <li class="breadcrumb-item active">Problems in Class</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="problems-in-class">Problems in Class</h1>
+
+<ol>
+  <li>
+    <p><strong>Memoryless Property</strong> Let \(X\) be an exponentially distributed
+random variable.</p>
+
+    <ul>
+      <li>Show that for any \(r, s \ge 0\),</li>
+    </ul>
+
+\[{\mathbb P}( X &gt; r+s | X&gt; r) = {\mathbb P}(X&gt; s).\]
+
+    <p>Life of electronic components without moving parts are often
+ modeled as exponential random variables. This means that if a
+ component is already \(r\) years old, the probability it will last
+ for \(s\) more years is equal to the probability a new identical
+ component will last for \(s\) years. Meaning there is no point
+ buying a new one, you should wait till failure to replace it and
+ use a different way to manage failures when they happen.</p>
+
+    <ul>
+      <li>Write the analog of the memoryless property for discrete random
+ variables taking values in \(\{1,2,\ldots\}\), and show that the
+ geometric random variable also has the memoryless property.</li>
+    </ul>
+
+    <p><strong>Radioactive Decay</strong> It can be proved (those who are interested
+  can try your hand at it, or see me for a proof) that the
+  exponential random variable is the <em>only</em> continuous random
+  variable defined on \([0,\infty)\) that can have the memoryless
+  property. This has a very important consequence in physics, one
+  that you have already studied.</p>
+
+    <p>Radioactivity is a probabilistic, quantum mechanical phenomenon,
+  wherein certain atoms, like C-14, rearrange themselves
+  spontaneously to a lower energy configuration. One may posit such
+  a memoryless property for radioactive decay: a C-14 atom at time
+  0, regardless of past, will rearrange itself to N-14 at a time
+  \(t\) in the future with some probability. The assumption here is
+  not on the probability, only that the probability is independent
+  of the past from time 0. This is enough to ensure that the time
+  to decay is modeled by an exponential random variable, and all
+  one has to do then is to find the exponential parameter by
+  observing the half life of C-14! Of course, this has been verified in 
+  practice to fantastic precision, and the harbinger of the atomic
+  age.</p>
+  </li>
+  <li>
+    <p>Let \(R_1, \ldots R_k\) be \(k\) independent exponentially
+distributed random variables with parameters \(\lambda_1,\ldots,
+\lambda_k\). Show that</p>
+
+\[R = \min_{1\le i \le k} R_i\]
+
+    <p>is also an exponentially distributed random variable. What is its
+ parameter?</p>
+  </li>
+  <li>
+    <p><strong>Poisson and Exponentials</strong> Let \(X_1, X_2, \ldots\) be iid
+exponential random variables with parameter \(\lambda\). Think of a
+packet queue at an Internet hub, and suppose \(X_i\) is the time
+gap (in seconds) between the \(i-1\)th and \(i\)‘th packet. Show
+that the number of packets that arrive in \(t\) seconds is Poisson
+distributed with parameter \(\lambda t\). Therefore, when you model
+interarrival times as exponential, the number of arrivals in any
+time interval is Poisson.</p>
+  </li>
+</ol>
+
+
+</div>
+
+
+
+
+<!-- Maybe find a different way?
+<script src="/ee342/js/scrollIfAnchor.js"></script>
+-->
+
+<footer class="footer footer-background" style="padding-top: 1em; padding-bottom: 1em">
+  <div class="container text-center">
+    
+    <p>Narayana Prasad Santhanam | Electrical and Computer Engineering | University of Hawaii <br />
+nsanthan@hawaii.edu<br /></p>
+
+
+    
+    <p style="margin: 0">Powered by the <a class="footer-link" href="https://morea-framework.github.io/">Morea Framework</a> (Theme: spacelab)<br>
+      Last update on: <span>2023-09-20 14:45:35 -1000</span></p>
+
+    <p style="margin: 0">
+      
+      1 prerequisites |
+      
+      11 modules
+      
+      | 13 outcomes
+      
+      
+      | 24 readings
+      
+      
+      | 28 experiences
+      
+      
+      | 7 assessments
+      
+    </p>
+  </div>
+</footer>
+
+
+<!-- Load Bootstrap JavaScript components -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<!-- Add anchors to pages. -->
+<script>anchors.add();</script>
+
+
+</body>
+</html>

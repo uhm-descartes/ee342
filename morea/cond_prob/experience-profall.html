@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> EE 342 | Prosecutor's Fallacy </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/ee342/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/ee342/css/style.css">
+  <link rel="stylesheet" href="/ee342/css/syntax.css">
+  <link rel="shortcut icon" href="/ee342/favicon.ico" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/020726ec0d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+
+  
+
+  <!-- Load JQuery, then use it to attach the class 'active' to navbar item currently displayed. -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(window).on('load', function () {
+      $('.nav-item').find('a[href="' + location.pathname + '"]').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+
+<div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/ee342/index.html"> EE 342 </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/prerequisites/">Prerequisites</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/modules/">Modules</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/outcomes/">Outcomes</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/readings/">Readings</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/experiences/">Experiences</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/assessments/">Assessments</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Internal fragment for displaying the breadcrumb bar -->
+<div class="breadcrumb-background" style="padding-top: 1em; padding-bottom: .01em">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        
+        <li class="breadcrumb-item"><a href="/ee342/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/ee342/modules">Modules</a></li>
+        <li class="breadcrumb-item"><a href="/ee342/modules/module-cp">Conditional Probabilities and Independence</a></li>
+        <li class="breadcrumb-item active">Prosecutor's Fallacy</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+
+<div class="container">
+  <h2 id="prosecutors-fallacy">Prosecutor’s Fallacy</h2>
+
+<p>Here is a morbid story of a murder and accusing a potentially innocent
+person. There is a town of 100,000 and a murder happens. Police
+recover DNA from the scene, and Cinderella style, go from person to
+person in the town, trying to match the DNA from the crime scene. They
+find a match, but the guy turns out to be a seemingly upstanding
+citizen, running 10 soup kitchens and 20 orphanages, and even the
+detective (who has a long record of service and really knows what she
+is doing) interviewing him thinks he is innocent. But the prosecutor
+has seen many CSI TV shows, goes and hauls the poor guy to court,
+roping in an expert witness who testifies that an innocent person’s
+DNA would match the crime scene with only probability
+\(1/50000=.00002\).</p>
+
+<p>How to weigh these pieces of information?
+Given the evidence, that is the person is a DNA match with the crime
+scene, the judicial system needs to decide the conditional probability</p>
+
+\[P(\textrm{ person is innocent } ∣ \textrm{ DNA match } ).\]
+
+<p>The expert witness however has the conditional probability</p>
+
+\[P( \textrm{ DNA match } ∣\textrm{ person is innocent } ).\]
+
+<p>In the expert testimony, the partial information is that the
+person is innocent—and conditioned on it the chance of a DNA match
+is rare. But it is quite different from the first conditional
+probability where the partial information you see is the evidence, and
+you need to decide if the person is innocent.</p>
+
+<p>Indeed it is easy to see in this case they are very different. In
+fact, you would guess that in that town, even if everyone were
+innocent, an <strong>expected</strong> 2 people would match the DNA at the crime
+scene (a formal statement of this will come in future modules). Just
+because you caught a match among 100,000 doesn’t really mean much when
+you think about it—it just shows that the test is not good enough.</p>
+
+<p>The word expected is highlighted above for a reason, and this is
+something we will work on a lot in the course. This example is also
+why we don’t keep databases of everyone’s DNA/fingerprints to solve
+crimes like some vocal public figures near an election occasionally
+want, why sane courts don’t always weigh cold matches highly as evidence
+and why pesky judges have always paid attention to how evidence is
+collected (to the horror of the makers and consumers of CSI shows).</p>
+
+<h2 id="fairy-tales-and-other-stories">Fairy tales and other stories</h2>
+
+<p>I love watching police procedurals (at least used to before my kids
+were born). And as you may
+guess, most shows are rampant with this fallacious reasoning. I won’t
+spoil those shows for you yet, but you will notice it henceforth :).</p>
+
+<h3 id="cinderella">Cinderella</h3>
+
+<p>The first opportunity to showcase this fallacious reasoning is the
+fairy tale Cinderella. Here we have a prince who has decided, somehow,
+that the probability a glass shoe will fit a random woman who isn’t
+Cinderella is very small. If you should tell this story to kids and
+not make the Prince a complete idiot, you should introduce some other
+piece of evidence (such as the Prince actually recognizing Cinderella,
+in which case, why bother with the shoe?)—shoe fit alone finding
+Cinderella is classic Prosecutor’s Fallacy.</p>
+
+<h3 id="other-stories">Other stories</h3>
+
+<p>When I went to get vaccinated for Covid-19, one of the agents doing
+the registrations there asked me my religion. Let us assume that the
+agent wasn’t just a karen/ken, but there was actually a Department of
+Health policy to ask this question.</p>
+
+<p>Someone from the Department of Health may have wanted to do outreach
+to groups that may not have been getting vaccinated enough. Since this
+is a class on probability and not public policy, let us also assume
+such an outreach is a legitimate public service goal.  So, this
+someone went ahead and decided to collect data about affiliations such
+as religion at the vaccination centers. But does such a
+rationalization make any sense?</p>
+
+<p>Given the title for this page, as you may guess, the answer is
+no. This is another example of Prosecutor’s Fallacy. Can you see why?
+What is the partial information here, and what is the conditional
+probability you estimate if you asked people lining up for vaccination
+their religion? If you indeed wanted data on which religious groups
+you needed to do outreach for, what would you do?</p>
+
+<p>(PS: there was no policy from the Department of Health to ask questions
+like this, I just got some overzealous karen/ken check me in.</p>
+
+</div>
+
+
+
+
+<!-- Maybe find a different way?
+<script src="/ee342/js/scrollIfAnchor.js"></script>
+-->
+
+<footer class="footer footer-background" style="padding-top: 1em; padding-bottom: 1em">
+  <div class="container text-center">
+    
+    <p>Narayana Prasad Santhanam | Electrical and Computer Engineering | University of Hawaii <br />
+nsanthan@hawaii.edu<br /></p>
+
+
+    
+    <p style="margin: 0">Powered by the <a class="footer-link" href="https://morea-framework.github.io/">Morea Framework</a> (Theme: spacelab)<br>
+      Last update on: <span>2023-09-20 14:45:35 -1000</span></p>
+
+    <p style="margin: 0">
+      
+      1 prerequisites |
+      
+      11 modules
+      
+      | 13 outcomes
+      
+      
+      | 24 readings
+      
+      
+      | 28 experiences
+      
+      
+      | 7 assessments
+      
+    </p>
+  </div>
+</footer>
+
+
+<!-- Load Bootstrap JavaScript components -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<!-- Add anchors to pages. -->
+<script>anchors.add();</script>
+
+
+</body>
+</html>

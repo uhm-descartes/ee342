@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> EE 342 | Guide for the Text </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/ee342/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/ee342/css/style.css">
+  <link rel="stylesheet" href="/ee342/css/syntax.css">
+  <link rel="shortcut icon" href="/ee342/favicon.ico" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/020726ec0d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+
+  
+
+  <!-- Load JQuery, then use it to attach the class 'active' to navbar item currently displayed. -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(window).on('load', function () {
+      $('.nav-item').find('a[href="' + location.pathname + '"]').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+
+<div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/ee342/index.html"> EE 342 </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/prerequisites/">Prerequisites</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/modules/">Modules</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/outcomes/">Outcomes</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/readings/">Readings</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/experiences/">Experiences</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/assessments/">Assessments</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Internal fragment for displaying the breadcrumb bar -->
+<div class="breadcrumb-background" style="padding-top: 1em; padding-bottom: .01em">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        
+        <li class="breadcrumb-item"><a href="/ee342/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/ee342/modules">Modules</a></li>
+        <li class="breadcrumb-item"><a href="/ee342/modules/module-slf">Sets, Logic and Functions</a></li>
+        <li class="breadcrumb-item active">Guide for the Text</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+
+<div class="container">
+  <p>Review the basics of sets, operations on sets (union, intersection,
+and algebra of set operations) from Section 1.1 of the textbook. This
+may be material you are already familiar with, but its importance
+cannot be understated.  You have to pay attention to two things that
+isn’t explicitly mentioned (but used) in the text: Cartesian products
+and indicator functions. Please use the handout for these.</p>
+
+<p>The text uses Cartesian products without definition at the top of page
+5 when it talks about tuples.  The sets of ordered pairs of real
+numbers is called \({\mathbb R}^2\) in the text. This notation comes
+because the set of ordered pairs of real numbers is really the
+Cartesian product \({\mathbb R} \times {\mathbb R}\) (hence
+abbreviated as \({\mathbb R}^2\)). Same for triplets. Thinking in
+terms of Cartesian products explicitly has lot of advantages down the
+line (and the book uses them too with the assumption you already know
+it).</p>
+
+<p>In general, you may think this section is simple or high school stuff.
+But the true beauty of this subject is primarily because of how deep
+even such basic stuff can be developed, and can yield so many
+astonishing conclusions. It is not for nothing that mathematics is
+often called the queen of all arts in much of the world (except in the
+United States, where we are taught implicitly or explicitly to look
+down on it as a tool or to fear it as if it were Sauron). But no longer.
+Probability theory is one area in math whose stunning beauty compares
+with the rarest of human accomplishments in any endeavor. You will get
+a preview of these things in this course among the experiences, and
+there is a lifetime of things to be explored starting from there.</p>
+
+
+</div>
+
+
+
+
+<!-- Maybe find a different way?
+<script src="/ee342/js/scrollIfAnchor.js"></script>
+-->
+
+<footer class="footer footer-background" style="padding-top: 1em; padding-bottom: 1em">
+  <div class="container text-center">
+    
+    <p>Narayana Prasad Santhanam | Electrical and Computer Engineering | University of Hawaii <br />
+nsanthan@hawaii.edu<br /></p>
+
+
+    
+    <p style="margin: 0">Powered by the <a class="footer-link" href="https://morea-framework.github.io/">Morea Framework</a> (Theme: spacelab)<br>
+      Last update on: <span>2023-09-20 14:45:35 -1000</span></p>
+
+    <p style="margin: 0">
+      
+      1 prerequisites |
+      
+      11 modules
+      
+      | 13 outcomes
+      
+      
+      | 24 readings
+      
+      
+      | 28 experiences
+      
+      
+      | 7 assessments
+      
+    </p>
+  </div>
+</footer>
+
+
+<!-- Load Bootstrap JavaScript components -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<!-- Add anchors to pages. -->
+<script>anchors.add();</script>
+
+
+</body>
+</html>

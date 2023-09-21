@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> EE 342 | Sets of real numbers with no length* </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/ee342/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/ee342/css/style.css">
+  <link rel="stylesheet" href="/ee342/css/syntax.css">
+  <link rel="shortcut icon" href="/ee342/favicon.ico" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/020726ec0d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+
+  
+
+  <!-- Load JQuery, then use it to attach the class 'active' to navbar item currently displayed. -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(window).on('load', function () {
+      $('.nav-item').find('a[href="' + location.pathname + '"]').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+
+<div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/ee342/index.html"> EE 342 </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/prerequisites/">Prerequisites</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/modules/">Modules</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/outcomes/">Outcomes</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/readings/">Readings</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/experiences/">Experiences</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/assessments/">Assessments</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee342/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Internal fragment for displaying the breadcrumb bar -->
+<div class="breadcrumb-background" style="padding-top: 1em; padding-bottom: .01em">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        
+        <li class="breadcrumb-item"><a href="/ee342/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/ee342/modules">Modules</a></li>
+        <li class="breadcrumb-item"><a href="/ee342/modules/module-axioms">Probability Space</a></li>
+        <li class="breadcrumb-item active">Sets of real numbers with no length*</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="non-measurable-sets">Non-measurable sets</h1>
+
+<p>One of the points I have mentioned is that when \(\Omega\) is uncountable,
+we exclude subsets of \(\Omega\) before assigning probabilities. It is not
+that they have zero probability, but they cannot participate at all!</p>
+
+<p>Consider the uniform pdf over \([0,1]\) we covered in this
+module. Under this pdf, the probability of an interval is its
+length. We generalize the observation and say that the length of any
+subset of \([0,1]\) is the probability assigned to this set under the
+uniform pdf. We will construct a subset of \([0,1]\) that CANNOT have
+a length/probability (not even length 0). Assigning <em>any</em> value to its
+length/probability simply breaks the notion of length/probability
+altogether.</p>
+
+<p>First, you need to know that the set of rational numbers is
+countable. We define the following relation \(a\sim b\) to mean
+\(|a-b|\) is rational. Such a relation satisfies</p>
+
+<ul>
+  <li>For all \(a\in[0,1]\), \(a\sim a\)</li>
+  <li>If \(a\sim b\), then \(b\sim a\)</li>
+  <li>If \(a\sim b\) and \(b\sim c\), then \(a \sim c\)</li>
+</ul>
+
+<p>Generally, relations that satisfy the above are called <em>equivalence</em>
+relations.  One interesting property of equivalence relations in
+general, and \(\sim\) in particular, is that it can partition (break
+into disjoint sets) \([0,1]\) based on the relation. To make this
+clear, for any \(a \in [0,1]\), let the family of \(a\) be defined as</p>
+
+\[H_a = \{ x: x\in [0,1] \textrm{ and } a \sim x \}.\]
+
+<p>If you think about it, if \(a \sim b\), then \(H_a = H_b\) (prove
+using the three properties). If \(a\not\sim b\), then \(H_a \cap H_b =
+\{\}\) (the third property gives this insight). So all related numbers
+live in their own family. Any two distinct families are
+disjoint. Every number is in some family. So \([0,1]\) is broken down
+into disjoint families based on the relation \(\sim\). Now that you
+know a little about countability, the number of families here is
+uncountably infinite.</p>
+
+<p>These families have another structure we exploit: given any one member
+\(z\) of a family, you can get all the others by adding every rational
+number between 0 and 1 to it, with the caveat that if for some
+rational number \(r\), \(z+r&gt;1\), then you interpret the
+result as \(z+r-1\).  As a shorthand for this operation, we define for
+\(z, r \in [0,1]\),</p>
+
+\[z + r \mod 1 \stackrel{\textrm{def}}{=} \begin{cases} z+r &amp; \textrm{
+if } z+r \le 1\\ z+r-1 &amp; \textrm{ if } z+r &gt; 1.  \end{cases}\]
+
+<p>With this observation, notice that the size of each family is simply
+the size of the set of rational numbers (which, as we have seen, is
+countable, and hence has a bijection with natural numbers \(\mathbb
+N\)). So every family can be thought of as an offset version of the
+set of rational numbers.</p>
+
+<p>When we have an uncountably infinite number of non-empty sets, it is
+not clear how to define their Cartesian product (tuples don’t work,
+since the index is not countable). Whether we can have have something
+like a Cartesian product of uncountably many non-empty sets is a
+matter of much debate, but in the ZFC version of set theory axioms
+(remember
+<a href="https://uhm-descartes.github.io/ee342/morea/sets-logic-func/experience-slf.html">Logicomix</a>
+from the previous
+<a href="https://uhm-descartes.github.io/ee342/modules/module-slf/">module</a>?)
+we use (you don’t need to know what ZFC is, but we mentioned it 
+<a href="https://uhm-descartes.github.io/ee342/morea/sets-logic-func/experience-slf.html">here</a>),
+we adopt an axiom that such Cartesian products exist. This is
+called the “Axiom of Choice”, that assures us that in <em>any</em> collection
+of non-empty sets, we can pick one element from each set.</p>
+
+<p>Let us go ahead and choose one representative of each family we formed
+using the relation \(\sim\), and call it \(H\). For \(r\in[0,1]\) let
+\(H\oplus r\) be the set</p>
+
+\[H\oplus r =\{ z+r \mod 1 : z \in H \}.\]
+
+<p>Now note that for rational \(r\in (0,1]\), \(H\oplus r\) also contains
+one member of each family, but different from the family member in
+\(H\) (by an amount equal to a right shift by \(r\), subtracting 1 if
+needed). But since very family can be thought of as an offset version
+of the set of rational numbers,</p>
+
+\[[0,1] = \bigcup_{\substack{r \in [0,1]\\r \textrm{ rational}}} H \oplus r.\]
+
+<p>Now, the set of rational numbers has a bijection with the set of
+natural nubmers, so the above equation is a way to write \([0,1]\) as
+a countable, disjoint union. Probability axiom 2 therefore applies.</p>
+
+<p>In the uniform probability law, \(P(H) =
+P(H\oplus r)\) for any \(r\) because the two sets are just shifts of
+each other. Using Probability Axiom 2, we have</p>
+
+\[1= P([0,1]) = \sum_{\substack{r \in [0,1]\\r \textrm{ rational}}} P(H \oplus r) = \sum_{\substack{r\in[0,1]\\r \textrm{ rational}}} P(H). \qquad\qquad\qquad\qquad\qquad(1)\]
+
+<p>We are allowed to write sum over rational numbers since there is a one
+to one correspondance between rationals and natural numbers (so the
+sum over rationals is really like \(\sum_{i\ge 1}\), except the indices
+are called by different names).</p>
+
+<p>Now we have a problem with Equation (1). The left side of the equation
+is 1. The right side is 0 if \(P(H)=0\), and \(\infty\) if \(P(H)\) is
+any number \(&gt;0\). It can never equal the left side no matter what we
+do.</p>
+
+<p>\(H\) therefore simply cannot be measured, it breaks the axioms of
+length/probability if we assign it anything at all! Now you know what I mean
+when I said we cannot assign probabilities or lengths to sets like \(H\)—they
+are so weird that if you do so, you break the axioms of probabilities/lengths.
+The crucial role played by the Axiom of Choice cannot be taken away, in fact,
+it is known that the Axiom of Choice is equivalent to the existence of such
+weird sets.</p>
+
+
+</div>
+
+
+
+
+<!-- Maybe find a different way?
+<script src="/ee342/js/scrollIfAnchor.js"></script>
+-->
+
+<footer class="footer footer-background" style="padding-top: 1em; padding-bottom: 1em">
+  <div class="container text-center">
+    
+    <p>Narayana Prasad Santhanam | Electrical and Computer Engineering | University of Hawaii <br />
+nsanthan@hawaii.edu<br /></p>
+
+
+    
+    <p style="margin: 0">Powered by the <a class="footer-link" href="https://morea-framework.github.io/">Morea Framework</a> (Theme: spacelab)<br>
+      Last update on: <span>2023-09-20 14:45:35 -1000</span></p>
+
+    <p style="margin: 0">
+      
+      1 prerequisites |
+      
+      11 modules
+      
+      | 13 outcomes
+      
+      
+      | 24 readings
+      
+      
+      | 28 experiences
+      
+      
+      | 7 assessments
+      
+    </p>
+  </div>
+</footer>
+
+
+<!-- Load Bootstrap JavaScript components -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<!-- Add anchors to pages. -->
+<script>anchors.add();</script>
+
+
+</body>
+</html>
